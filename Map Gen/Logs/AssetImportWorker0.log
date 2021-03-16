@@ -15,11 +15,11 @@ A:/Games/Unity Scetches/Cckckck/Map Gen
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-3181
+3274
 Successfully changed project path to: A:/Games/Unity Scetches/Cckckck/Map Gen
 A:/Games/Unity Scetches/Cckckck/Map Gen
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 57.09 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 62.78 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.0f1 (c7b5465681fb)
 [Subsystems] Discovering subsystems at path C:/User/Programmes/Unity/2020.3.0f1/Editor/Data/Resources/UnitySubsystems
@@ -35,58 +35,242 @@ Initialize mono
 Mono path[0] = 'C:/User/Programmes/Unity/2020.3.0f1/Editor/Data/Managed'
 Mono path[1] = 'C:/User/Programmes/Unity/2020.3.0f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/User/Programmes/Unity/2020.3.0f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56300
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56052
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/User/Programmes/Unity/2020.3.0f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002551 seconds.
+Registered in 0.002705 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 56.83 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 55.16 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.542 seconds
+- Completed reload, in  1.874 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.000996 seconds.
+Registered in 0.000980 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.56 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.53 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.524 seconds
+- Completed reload, in  1.588 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 0.53 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.52 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1594 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 89.3 MB.
 System memory in use after: 89.1 MB.
 
 Unloading 72 unused Assets to reduce memory usage. Loaded Objects now: 2047.
-Total: 4.197387 ms (FindLiveObjects: 0.365965 ms CreateObjectMapping: 0.087923 ms MarkObjects: 3.312291 ms  DeleteObjects: 0.429933 ms)
+Total: 3.180534 ms (FindLiveObjects: 0.312447 ms CreateObjectMapping: 0.086139 ms MarkObjects: 2.432802 ms  DeleteObjects: 0.347871 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/AssetStoreOriginals/_SNAPS_PrototypingAssets/About/Readme.asset
-  artifactKey: Guid(83c2ed844a8c74b779a4c823d16594b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AssetStoreOriginals/_SNAPS_PrototypingAssets/About/Readme.asset using Guid(83c2ed844a8c74b779a4c823d16594b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e18a57fc79f6f1fab41ce9966d65d9f9') in 0.076726 seconds
-  Import took 0.081332 seconds .
+  path: Assets/FSP/Modular Pixel Forest/Meshes/mesh_Grass Hill Corner Outer.asset
+  artifactKey: Guid(98afe98743c8bd74fabb3f1037a391d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FSP/Modular Pixel Forest/Meshes/mesh_Grass Hill Corner Outer.asset using Guid(98afe98743c8bd74fabb3f1037a391d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7498d9599c8a61b5bbc80f814ee21e2') in 0.130512 seconds
+  Import took 0.134603 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000377 seconds.
+  path: Assets/FSP/Modular Pixel Forest/Meshes/mesh_Tree Point Up.asset
+  artifactKey: Guid(6e456a550afa06e4e9c1043bc18f8211) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FSP/Modular Pixel Forest/Meshes/mesh_Tree Point Up.asset using Guid(6e456a550afa06e4e9c1043bc18f8211) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ca07e25da0d6f45cda40233f4c3854e') in 0.013297 seconds
+  Import took 0.016974 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000288 seconds.
+  path: Assets/FSP/Modular Pixel Forest/Meshes/mesh_Water.asset
+  artifactKey: Guid(be6f3ec8e04a07b4fb3e02c9ca5817c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FSP/Modular Pixel Forest/Meshes/mesh_Water.asset using Guid(be6f3ec8e04a07b4fb3e02c9ca5817c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04a75d19300ee1f1835906e4605b111d') in 0.010423 seconds
+  Import took 0.014319 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000307 seconds.
+  path: Assets/FSP/Modular Pixel Forest/Meshes/mesh_Temple Steps.asset
+  artifactKey: Guid(ddaba58e2eada524cbf6f6669b49868c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FSP/Modular Pixel Forest/Meshes/mesh_Temple Steps.asset using Guid(ddaba58e2eada524cbf6f6669b49868c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4462793dc895d2468360cb4fe08ab8c2') in 0.013197 seconds
+  Import took 0.016788 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000361 seconds.
+  path: Assets/FSP/Modular Pixel Forest/Meshes/mesh_Crate.asset
+  artifactKey: Guid(031d35ed76300204c89c4aa513909f5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FSP/Modular Pixel Forest/Meshes/mesh_Crate.asset using Guid(031d35ed76300204c89c4aa513909f5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '432a0355752571f636c15199e6775b25') in 0.010842 seconds
+  Import took 0.014614 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000310 seconds.
+  path: Assets/FSP/Modular Pixel Forest/Meshes/mesh_Fence Rail.asset
+  artifactKey: Guid(777f4725f2d67b749b57588618f9f8f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FSP/Modular Pixel Forest/Meshes/mesh_Fence Rail.asset using Guid(777f4725f2d67b749b57588618f9f8f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dee9be367d712379fb0a33a285f5805e') in 0.010149 seconds
+  Import took 0.014124 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000362 seconds.
+  path: Assets/FSP/Modular Pixel Forest/Meshes/mesh_Dirt Block Center.asset
+  artifactKey: Guid(2dd42a2cf228c7a4f9b4e8ac4c038497) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FSP/Modular Pixel Forest/Meshes/mesh_Dirt Block Center.asset using Guid(2dd42a2cf228c7a4f9b4e8ac4c038497) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a28fff4f448f0d2902cb8dc04457541') in 0.010335 seconds
+  Import took 0.013877 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000095 seconds.
+  path: Assets/FSP/Modular Pixel Forest/Meshes/mesh_Grass Hill Corner Inner.asset
+  artifactKey: Guid(5f1c13b0fca311543bc2e5457ef1657b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FSP/Modular Pixel Forest/Meshes/mesh_Grass Hill Corner Inner.asset using Guid(5f1c13b0fca311543bc2e5457ef1657b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b97f537a61aacc6b4be0886c4ca14ef6') in 0.009414 seconds
+  Import took 0.012858 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000289 seconds.
+  path: Assets/FSP/Modular Pixel Forest/Meshes/mesh_Temple Block.asset
+  artifactKey: Guid(d4a992684ac9d35449daa7acb0ebbc75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FSP/Modular Pixel Forest/Meshes/mesh_Temple Block.asset using Guid(d4a992684ac9d35449daa7acb0ebbc75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5bda788aac9a0f0f0552140b81ccf55c') in 0.009366 seconds
+  Import took 0.012901 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000316 seconds.
+  path: Assets/FSP/Modular Pixel Forest/Meshes/mesh_Pillar Base.asset
+  artifactKey: Guid(40c215ffc0308de48b269153932e4b58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FSP/Modular Pixel Forest/Meshes/mesh_Pillar Base.asset using Guid(40c215ffc0308de48b269153932e4b58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7934dd4c740b428f87fda85d9a00bdba') in 0.011454 seconds
+  Import took 0.015381 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000306 seconds.
+  path: Assets/FSP/Modular Pixel Forest/Meshes/mesh_Pillar Center.asset
+  artifactKey: Guid(cc38d8df6177a724fb7805f14a145adc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FSP/Modular Pixel Forest/Meshes/mesh_Pillar Center.asset using Guid(cc38d8df6177a724fb7805f14a145adc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2582eedfa4ababb5ecaacfbcadd27a1') in 0.011020 seconds
+  Import took 0.014361 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000301 seconds.
+  path: Assets/FSP/Modular Pixel Forest/Meshes/mesh_Grass Hill Straight.asset
+  artifactKey: Guid(3d643cbc3bec6f54a992c548686aab38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FSP/Modular Pixel Forest/Meshes/mesh_Grass Hill Straight.asset using Guid(3d643cbc3bec6f54a992c548686aab38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee2478cb75ef4476af38d0c9a17fa122') in 0.010223 seconds
+  Import took 0.014317 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000390 seconds.
+  path: Assets/FSP/Modular Pixel Forest/Meshes/mesh_Boulder.asset
+  artifactKey: Guid(8de204b3de335854493d3b320d4f2414) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FSP/Modular Pixel Forest/Meshes/mesh_Boulder.asset using Guid(8de204b3de335854493d3b320d4f2414) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04031009bcf94742e6ef1f035e6e655f') in 0.010321 seconds
+  Import took 0.014702 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000350 seconds.
+  path: Assets/FSP/Modular Pixel Forest/Meshes/mesh_Temple Block Center.asset
+  artifactKey: Guid(0512c2300885564468e98154bda7dc48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FSP/Modular Pixel Forest/Meshes/mesh_Temple Block Center.asset using Guid(0512c2300885564468e98154bda7dc48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa90c3dc20ea1443435586eef3ecd36f') in 0.010364 seconds
+  Import took 0.015831 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000283 seconds.
+  path: Assets/FSP/Modular Pixel Forest/Meshes/mesh_Fence Hill.asset
+  artifactKey: Guid(fe6098180702e9a4cbd684cde7e1bd7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FSP/Modular Pixel Forest/Meshes/mesh_Fence Hill.asset using Guid(fe6098180702e9a4cbd684cde7e1bd7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f32029a493bdbe54711a5552d2e587ce') in 0.014304 seconds
+  Import took 0.018281 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000328 seconds.
+  path: Assets/FSP/Modular Pixel Forest/Meshes/mesh_Tree Sphere.asset
+  artifactKey: Guid(c8842cff312efa2458d2d4b9ff4346e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FSP/Modular Pixel Forest/Meshes/mesh_Tree Sphere.asset using Guid(c8842cff312efa2458d2d4b9ff4346e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb0e3e7ddc852149c720cdbcc78c86a2') in 0.010031 seconds
+  Import took 0.013387 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000313 seconds.
+  path: Assets/FSP/Modular Pixel Forest/Meshes/mesh_Sign.asset
+  artifactKey: Guid(165d64a5ef60e764c9f8794eb2c7f19b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FSP/Modular Pixel Forest/Meshes/mesh_Sign.asset using Guid(165d64a5ef60e764c9f8794eb2c7f19b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d1903a7ae4aa70d665dedc217e4fa39') in 0.011435 seconds
+  Import took 0.015716 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000361 seconds.
+  path: Assets/FSP/Modular Pixel Forest/Meshes/mesh_Tree Point Down.asset
+  artifactKey: Guid(247ac9b9e0a2dc84b8ad9366bb062363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FSP/Modular Pixel Forest/Meshes/mesh_Tree Point Down.asset using Guid(247ac9b9e0a2dc84b8ad9366bb062363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1fbf4302a49488ff1ff697e7b4d6bc07') in 0.009329 seconds
+  Import took 0.013058 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000396 seconds.
+  path: Assets/FSP/Modular Pixel Forest/Meshes/mesh_Pillar Top.asset
+  artifactKey: Guid(9d93349cec38bad47ade8cc93cc18bbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FSP/Modular Pixel Forest/Meshes/mesh_Pillar Top.asset using Guid(9d93349cec38bad47ade8cc93cc18bbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c21c14ed83bd36cd42bd9e8d94503f6') in 0.010060 seconds
+  Import took 0.014113 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000315 seconds.
+  path: Assets/FSP/Modular Pixel Forest/Meshes/mesh_Dirt Block.asset
+  artifactKey: Guid(874e93092d68624469ec8eebddb61a55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FSP/Modular Pixel Forest/Meshes/mesh_Dirt Block.asset using Guid(874e93092d68624469ec8eebddb61a55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ad720cae06ff13562e4856bca795949') in 0.009845 seconds
+  Import took 0.014447 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000349 seconds.
+  path: Assets/FSP/Modular Pixel Forest/Meshes/mesh_Grass Block.asset
+  artifactKey: Guid(f0428c0be2200a647818788a545b0599) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FSP/Modular Pixel Forest/Meshes/mesh_Grass Block.asset using Guid(f0428c0be2200a647818788a545b0599) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3967d70ede28b9d1e1ad9870d95b4f50') in 0.009521 seconds
+  Import took 0.013844 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000424 seconds.
+  path: Assets/FSP/Modular Pixel Forest/Meshes/mesh_Fence Post.asset
+  artifactKey: Guid(c13e7a1e670e3b849b0e2af9c8e75aae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FSP/Modular Pixel Forest/Meshes/mesh_Fence Post.asset using Guid(c13e7a1e670e3b849b0e2af9c8e75aae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c5988a4ee24ab64a41bb670ba65a517') in 0.011354 seconds
+  Import took 0.015128 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000286 seconds.
+  path: Assets/FSP/Modular Pixel Forest/Meshes/mesh_Dirt Ramp.asset
+  artifactKey: Guid(18a868b487d349140b3619f66c583b07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FSP/Modular Pixel Forest/Meshes/mesh_Dirt Ramp.asset using Guid(18a868b487d349140b3619f66c583b07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c887713f65182c83f370f13ec66bfeef') in 0.009900 seconds
+  Import took 0.014236 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 159.160278 seconds.
+  path: Assets/AssetStoreOriginals/_SNAPS_PrototypingAssets/About
+  artifactKey: Guid(844809bda0ef59246a44bb3ec8a99a01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetStoreOriginals/_SNAPS_PrototypingAssets/About using Guid(844809bda0ef59246a44bb3ec8a99a01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '839afef73c381b7efbf91b4e2396908f') in 0.002744 seconds
+  Import took 0.007076 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.001495 seconds.
+Registered in 0.001071 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.85 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.62 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Warning: Annotation not found!
 UnityEngine.StackTraceUtility:ExtractStackTrace ()
@@ -101,21 +285,61 @@ Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.848 seconds
+- Completed reload, in  1.321 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.10 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.54 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1560 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 87.0 MB.
-System memory in use after: 86.8 MB.
+System memory in use before: 90.4 MB.
+System memory in use after: 90.2 MB.
 
-Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 2050.
-Total: 5.724451 ms (FindLiveObjects: 0.870059 ms CreateObjectMapping: 0.104234 ms MarkObjects: 4.402796 ms  DeleteObjects: 0.345832 ms)
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 2060.
+Total: 4.420381 ms (FindLiveObjects: 0.379727 ms CreateObjectMapping: 0.097863 ms MarkObjects: 3.667553 ms  DeleteObjects: 0.273455 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 678.244494 seconds.
+  path: Assets/AssetStoreOriginals
+  artifactKey: Guid(f94ef0ca17b4d2e408e7c17e4426ea52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetStoreOriginals using Guid(f94ef0ca17b4d2e408e7c17e4426ea52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eec002806d5b20575a3faf1b0ffd1144') in 0.006349 seconds
+  Import took 0.010114 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.001128 seconds.
+Registered in 0.001482 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.50 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@5.0.1/Editor/EditorCore/EditorUtility.cs:575)
+UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@5.0.1/Editor/EditorCore/HierarchyListener.cs:21)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Library/PackageCache/com.unity.probuilder@5.0.1/Editor/EditorCore/EditorUtility.cs line 575]
+
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.086 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.52 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1560 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 90.4 MB.
+System memory in use after: 90.2 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 2063.
+Total: 3.974647 ms (FindLiveObjects: 0.309134 ms CreateObjectMapping: 0.081042 ms MarkObjects: 3.213664 ms  DeleteObjects: 0.369278 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001140 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 0.56 ms, found 0 plugins.
@@ -133,15 +357,47 @@ Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.992 seconds
+- Completed reload, in  1.727 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.53 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.58 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1560 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 87.0 MB.
-System memory in use after: 86.8 MB.
+System memory in use before: 90.5 MB.
+System memory in use after: 90.3 MB.
 
-Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 2053.
-Total: 3.959102 ms (FindLiveObjects: 0.324170 ms CreateObjectMapping: 0.082317 ms MarkObjects: 3.217232 ms  DeleteObjects: 0.333854 ms)
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 2066.
+Total: 4.949705 ms (FindLiveObjects: 0.368004 ms CreateObjectMapping: 0.087669 ms MarkObjects: 3.875001 ms  DeleteObjects: 0.617503 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001073 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.65 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@5.0.1/Editor/EditorCore/EditorUtility.cs:575)
+UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@5.0.1/Editor/EditorCore/HierarchyListener.cs:21)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Library/PackageCache/com.unity.probuilder@5.0.1/Editor/EditorCore/EditorUtility.cs line 575]
+
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.742 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.54 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1560 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 90.5 MB.
+System memory in use after: 90.3 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 2069.
+Total: 3.394098 ms (FindLiveObjects: 0.308624 ms CreateObjectMapping: 0.080533 ms MarkObjects: 2.739897 ms  DeleteObjects: 0.263515 ms)
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
