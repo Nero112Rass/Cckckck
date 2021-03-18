@@ -1,0 +1,442 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.0f1 (c7b5465681fb) revision 13088070'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Education; OS build 17134.2087; Version 1803; 64bit' Language: 'ru' Physical Memory: 16366 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\User\Programmes\Unity\2020.3.0f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+A:/Games/Unity Scetches/Cckckck/Map Gen
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+3102
+Successfully changed project path to: A:/Games/Unity Scetches/Cckckck/Map Gen
+A:/Games/Unity Scetches/Cckckck/Map Gen
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 63.00 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.0f1 (c7b5465681fb)
+[Subsystems] Discovering subsystems at path C:/User/Programmes/Unity/2020.3.0f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path A:/Games/Unity Scetches/Cckckck/Map Gen/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1050 Ti (ID=0x1c82)
+    Vendor:   
+    VRAM:     4018 MB
+    Driver:   27.21.14.6172
+Initialize mono
+Mono path[0] = 'C:/User/Programmes/Unity/2020.3.0f1/Editor/Data/Managed'
+Mono path[1] = 'C:/User/Programmes/Unity/2020.3.0f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/User/Programmes/Unity/2020.3.0f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56164
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/User/Programmes/Unity/2020.3.0f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.004350 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 67.66 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.183 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.001267 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.51 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.109 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 0.56 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1597 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 89.6 MB.
+System memory in use after: 89.4 MB.
+
+Unloading 72 unused Assets to reduce memory usage. Loaded Objects now: 2048.
+Total: 3.290885 ms (FindLiveObjects: 0.333090 ms CreateObjectMapping: 0.083846 ms MarkObjects: 2.462111 ms  DeleteObjects: 0.410055 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Tiles Vox/Obj/Lava7.png
+  artifactKey: Guid(5bf0dbf9ee7ad6a4aba201b230c2b4ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiles Vox/Obj/Lava7.png using Guid(5bf0dbf9ee7ad6a4aba201b230c2b4ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a24ba7151a5d7e2d61f0d700c5145771') in 0.109670 seconds
+  Import took 0.113381 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000365 seconds.
+  path: Assets/Tiles Vox/Obj/Lava5.png
+  artifactKey: Guid(0e32d9d57efe1ee4a9e2362aacbcec88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiles Vox/Obj/Lava5.png using Guid(0e32d9d57efe1ee4a9e2362aacbcec88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05eb8670ea8d4b8888cb5269aa4aa314') in 0.007847 seconds
+  Import took 0.011708 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000330 seconds.
+  path: Assets/Tiles Vox/Obj/Lava2.obj
+  artifactKey: Guid(f841ddb45bf28c242b067ef8f0e6133c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiles Vox/Obj/Lava2.obj using Guid(f841ddb45bf28c242b067ef8f0e6133c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7fa169f17361bb83baa324f7fd75c63f') in 0.183574 seconds
+  Import took 0.187843 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000454 seconds.
+  path: Assets/Tiles Vox/Obj/Lava3.obj
+  artifactKey: Guid(a5bde777758cd6e47aa12d45b9fe99cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiles Vox/Obj/Lava3.obj using Guid(a5bde777758cd6e47aa12d45b9fe99cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9dfc8c64bfbcbc39962b0dd753931e1c') in 0.031416 seconds
+  Import took 0.036758 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000474 seconds.
+  path: Assets/Tiles Vox/Obj/Lava2.png
+  artifactKey: Guid(e2782d62f39092f469e51ba97a4c145d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiles Vox/Obj/Lava2.png using Guid(e2782d62f39092f469e51ba97a4c145d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0ce3983e6a986c7ffd268eff75e7480') in 0.009017 seconds
+  Import took 0.013371 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000415 seconds.
+  path: Assets/Tiles Vox/Obj/Lava8.png
+  artifactKey: Guid(c9ae3a4505e4f644696b0ae7b26a7e06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiles Vox/Obj/Lava8.png using Guid(c9ae3a4505e4f644696b0ae7b26a7e06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ecfd8d871570cbdd2c1b69ce3837fd2') in 0.008366 seconds
+  Import took 0.012906 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000777 seconds.
+  path: Assets/Tiles Vox/Obj/Lava9.obj
+  artifactKey: Guid(699f4163810f5aa4085c02c98ae125eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiles Vox/Obj/Lava9.obj using Guid(699f4163810f5aa4085c02c98ae125eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c95e2670a607fac1e5ed307d6e321e7d') in 0.029205 seconds
+  Import took 0.033360 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000331 seconds.
+  path: Assets/Tiles Vox/Obj/Lava4.obj
+  artifactKey: Guid(3e21139616eef9a4592ad2dedbb3c44c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiles Vox/Obj/Lava4.obj using Guid(3e21139616eef9a4592ad2dedbb3c44c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff2e1ee46203e2746f4749c9dbb9c26d') in 0.030144 seconds
+  Import took 0.036127 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000631 seconds.
+  path: Assets/Tiles Vox/Obj/Lava10.obj
+  artifactKey: Guid(83f6a681560c9f148b6e2c3fb551aa1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiles Vox/Obj/Lava10.obj using Guid(83f6a681560c9f148b6e2c3fb551aa1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25264ac943ce2cb3b7aa6df98b961aa2') in 0.030109 seconds
+  Import took 0.034693 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000393 seconds.
+  path: Assets/Tiles Vox/Obj/Lava7.obj
+  artifactKey: Guid(729a3beb27bfba84c884d122770e1a8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiles Vox/Obj/Lava7.obj using Guid(729a3beb27bfba84c884d122770e1a8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a83eac8183b6e9eaaba8412ece99621') in 0.036661 seconds
+  Import took 0.041188 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000316 seconds.
+  path: Assets/Tiles Vox/Obj/Lava10.png
+  artifactKey: Guid(a2834932a6f44854e88fe94440856e01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiles Vox/Obj/Lava10.png using Guid(a2834932a6f44854e88fe94440856e01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9964804709a17d58cb075fb6610e8a7c') in 0.006825 seconds
+  Import took 0.011333 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000670 seconds.
+  path: Assets/Tiles Vox/Obj/Lava5.obj
+  artifactKey: Guid(67c72959843350e41a94464d97a99675) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiles Vox/Obj/Lava5.obj using Guid(67c72959843350e41a94464d97a99675) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8eec995128338917c683b35b25a51145') in 0.032301 seconds
+  Import took 0.036024 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000342 seconds.
+  path: Assets/Tiles Vox/Obj/Lava11.obj
+  artifactKey: Guid(f5cef402601d2bb4680dc72bc8e898b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiles Vox/Obj/Lava11.obj using Guid(f5cef402601d2bb4680dc72bc8e898b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1efad0dcc10dd7aa3aa9ecb76f508fce') in 0.033619 seconds
+  Import took 0.038172 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000671 seconds.
+  path: Assets/Tiles Vox/Obj/Lava1.obj
+  artifactKey: Guid(ad3ce304d3a68b846a41cd3227d29e9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiles Vox/Obj/Lava1.obj using Guid(ad3ce304d3a68b846a41cd3227d29e9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11d86414f5e61b37ebd02be45e66baf6') in 0.029333 seconds
+  Import took 0.036067 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000338 seconds.
+  path: Assets/Tiles Vox/Obj/Lava1.png
+  artifactKey: Guid(a354e416b6bc9d341ac8d1287e97f361) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiles Vox/Obj/Lava1.png using Guid(a354e416b6bc9d341ac8d1287e97f361) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0bdecce710a108cd78b0d35c2aee0b9d') in 0.007454 seconds
+  Import took 0.011365 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000519 seconds.
+  path: Assets/Tiles Vox/Obj/Lava4.png
+  artifactKey: Guid(75fe7e7b56b975847ae01a9c1fda9156) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiles Vox/Obj/Lava4.png using Guid(75fe7e7b56b975847ae01a9c1fda9156) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b0544f355e01e9baf2b0401a6626b48') in 0.008416 seconds
+  Import took 0.013172 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000318 seconds.
+  path: Assets/Tiles Vox/Obj/Lava11.png
+  artifactKey: Guid(d134068b74a275245a608f32d8c65239) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiles Vox/Obj/Lava11.png using Guid(d134068b74a275245a608f32d8c65239) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '648eef26c6c4884d87362b69f80e74eb') in 0.007527 seconds
+  Import took 0.013520 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000314 seconds.
+  path: Assets/Tiles Vox/Obj/Lava6.png
+  artifactKey: Guid(1e16948827ac9044983baf9e15b7bba4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiles Vox/Obj/Lava6.png using Guid(1e16948827ac9044983baf9e15b7bba4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84f38df1c44439cad8a34d039964f536') in 0.007819 seconds
+  Import took 0.011413 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000302 seconds.
+  path: Assets/Tiles Vox/Obj/Lava6.obj
+  artifactKey: Guid(1d27c41fdcf62f64e8d8e46e8d74a772) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiles Vox/Obj/Lava6.obj using Guid(1d27c41fdcf62f64e8d8e46e8d74a772) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c57db016f90b910abc613f5cd35018bb') in 0.031022 seconds
+  Import took 0.036126 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000366 seconds.
+  path: Assets/Tiles Vox/Obj/Lava3.png
+  artifactKey: Guid(dd90cc412684bfa48a682e0b9e4b9739) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiles Vox/Obj/Lava3.png using Guid(dd90cc412684bfa48a682e0b9e4b9739) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '255a2e434ee0ffcbf955fef01290ca61') in 0.008762 seconds
+  Import took 0.012745 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000298 seconds.
+  path: Assets/Tiles Vox/Obj/Lava8.obj
+  artifactKey: Guid(53fc9ac226f769a47a0f6c3dca3c4378) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiles Vox/Obj/Lava8.obj using Guid(53fc9ac226f769a47a0f6c3dca3c4378) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47a587d09d43930d4cbd2fa23e092a22') in 0.033860 seconds
+  Import took 0.037739 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000316 seconds.
+  path: Assets/Tiles Vox/Obj/Lava9.png
+  artifactKey: Guid(c354f3bbf8091fd4da5e95975183c03f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiles Vox/Obj/Lava9.png using Guid(c354f3bbf8091fd4da5e95975183c03f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f998812070e2538a209bf355d356c77') in 0.008266 seconds
+  Import took 0.012049 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.389219 seconds.
+  path: Assets/Tiles Vox/Obj/Lava12.obj
+  artifactKey: Guid(58f38dbe5ce4b664fa75d25270047a49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiles Vox/Obj/Lava12.obj using Guid(58f38dbe5ce4b664fa75d25270047a49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a8761509440b2c232009d8f5a17e521') in 0.026516 seconds
+  Import took 0.030388 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.536878 seconds.
+  path: Assets/Tiles Vox/Obj/Lava12.png
+  artifactKey: Guid(e7561b7ca2658b543a9bd79ddcee3c1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiles Vox/Obj/Lava12.png using Guid(e7561b7ca2658b543a9bd79ddcee3c1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11055862dcaacd190ef67962f0a7f493') in 0.007188 seconds
+  Import took 0.011050 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 298.072527 seconds.
+  path: Assets/Tiles Vox/Obj/NewGrass3.obj
+  artifactKey: Guid(98ace08ef0d465b459b7eae4a5080ba6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiles Vox/Obj/NewGrass3.obj using Guid(98ace08ef0d465b459b7eae4a5080ba6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ab724668b081f85716ca5b78d941df7') in 0.031579 seconds
+  Import took 0.035923 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.033721 seconds.
+  path: Assets/Tiles Vox/Obj/NewGrass3.png
+  artifactKey: Guid(d4451dda8fc04b849a04fc67214243f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiles Vox/Obj/NewGrass3.png using Guid(d4451dda8fc04b849a04fc67214243f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bfe7b0bf3d657adf494123c0780031b9') in 0.011371 seconds
+  Import took 0.015835 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.003450 seconds.
+  path: Assets/Tiles Vox/Obj/NewGrass3.png
+  artifactKey: Guid(d4451dda8fc04b849a04fc67214243f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiles Vox/Obj/NewGrass3.png using Guid(d4451dda8fc04b849a04fc67214243f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bfe7b0bf3d657adf494123c0780031b9') in 0.008340 seconds
+  Import took 0.012290 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001999 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.52 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@5.0.1/Editor/EditorCore/EditorUtility.cs:575)
+UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@5.0.1/Editor/EditorCore/HierarchyListener.cs:21)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Library/PackageCache/com.unity.probuilder@5.0.1/Editor/EditorCore/EditorUtility.cs line 575]
+
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.492 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.22 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1563 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 90.9 MB.
+System memory in use after: 90.7 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 2096.
+Total: 4.312836 ms (FindLiveObjects: 0.871334 ms CreateObjectMapping: 0.366220 ms MarkObjects: 2.817883 ms  DeleteObjects: 0.255615 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 25.144408 seconds.
+  path: Assets/Tiles Vox/Obj/Lava11.obj
+  artifactKey: Guid(f5cef402601d2bb4680dc72bc8e898b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiles Vox/Obj/Lava11.obj using Guid(f5cef402601d2bb4680dc72bc8e898b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '477ee24ea1f11f2ede05ea93d1b34ad9') in 0.128006 seconds
+  Import took 0.133330 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000374 seconds.
+  path: Assets/Tiles Vox/Obj/Lava10.obj
+  artifactKey: Guid(83f6a681560c9f148b6e2c3fb551aa1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiles Vox/Obj/Lava10.obj using Guid(83f6a681560c9f148b6e2c3fb551aa1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8fef7643ddee57b5da4712bee9d44c35') in 0.033215 seconds
+  Import took 0.039552 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000296 seconds.
+  path: Assets/Tiles Vox/Obj/Lava12.obj
+  artifactKey: Guid(58f38dbe5ce4b664fa75d25270047a49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tiles Vox/Obj/Lava12.obj using Guid(58f38dbe5ce4b664fa75d25270047a49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '743974c9b7ea1d666aba8ab1cf2822cc') in 0.043295 seconds
+  Import took 0.049247 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001158 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.52 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@5.0.1/Editor/EditorCore/EditorUtility.cs:575)
+UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@5.0.1/Editor/EditorCore/HierarchyListener.cs:21)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Library/PackageCache/com.unity.probuilder@5.0.1/Editor/EditorCore/EditorUtility.cs line 575]
+
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.573 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.80 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1563 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 90.9 MB.
+System memory in use after: 90.7 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 2100.
+Total: 3.230231 ms (FindLiveObjects: 0.351949 ms CreateObjectMapping: 0.082572 ms MarkObjects: 2.526843 ms  DeleteObjects: 0.267593 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001788 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.56 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@5.0.1/Editor/EditorCore/EditorUtility.cs:575)
+UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@5.0.1/Editor/EditorCore/HierarchyListener.cs:21)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Library/PackageCache/com.unity.probuilder@5.0.1/Editor/EditorCore/EditorUtility.cs line 575]
+
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.824 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.64 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1563 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 90.9 MB.
+System memory in use after: 90.7 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 2103.
+Total: 6.324117 ms (FindLiveObjects: 0.547164 ms CreateObjectMapping: 0.177121 ms MarkObjects: 5.092424 ms  DeleteObjects: 0.505114 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001304 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.63 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@5.0.1/Editor/EditorCore/EditorUtility.cs:575)
+UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@5.0.1/Editor/EditorCore/HierarchyListener.cs:21)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Library/PackageCache/com.unity.probuilder@5.0.1/Editor/EditorCore/EditorUtility.cs line 575]
+
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.442 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.53 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1563 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 90.9 MB.
+System memory in use after: 90.7 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 2106.
+Total: 3.306176 ms (FindLiveObjects: 0.325954 ms CreateObjectMapping: 0.080533 ms MarkObjects: 2.618844 ms  DeleteObjects: 0.279316 ms)
+
