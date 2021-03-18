@@ -56,14 +56,16 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\CharController.cs" />
     <Compile Include="Assets\AssetStoreOriginals\_SNAPS_PrototypingAssets\About\Scripts\Readme.cs" />
+    <Compile Include="Assets\Scripts\VoxelTile.cs" />
+    <Compile Include="Assets\Scripts\WaveMapGeneratorScript.cs" />
     <Compile Include="Assets\AssetStoreOriginals\_SNAPS_Tools\AssetSwapTool\Scripts\SwapTool.cs" />
     <Compile Include="Assets\Scripts\CharContoller.cs" />
     <Compile Include="Assets\AssetStoreOriginals\_SNAPS_Tools\AssetSwapTool\Scripts\UnpackNestedPrefab.cs" />
     <Compile Include="Assets\AssetStoreOriginals\_SNAPS_Tools\AssetSwapTool\Scripts\SwapShader.cs" />
-    <Compile Include="Assets\Scripts\CameraMovement.cs" />
-    <Compile Include="Assets\Scripts\VoxelTile.cs" />
     <Compile Include="Assets\Scripts\MapGeneratorScript.cs" />
+    <Compile Include="Assets\Scripts\CameraMovement.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\FSP\MAST\updates.txt" />

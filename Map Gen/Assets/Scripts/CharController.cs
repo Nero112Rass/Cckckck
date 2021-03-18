@@ -30,7 +30,7 @@ public class CharController : MonoBehaviour
     {
     	rb = GetComponent<Rigidbody>();
     	isMoving = false;
-		startPosition = new Vector3(0, 2, 0);
+		startPosition = new Vector3(0, 4, 0);
 		transform.position = startPosition;
 		
     }
@@ -43,7 +43,7 @@ public class CharController : MonoBehaviour
 	    {
 			//horizontal = Input.GetAxisRaw("Horizontal");
 			//vertical = Input.GetAxisRaw("Vertical");
-			rb.MovePosition(new Vector3(Mathf.Round(transform.position.x), transform.position.y, Mathf.Round(transform.position.z)));
+			
 			//transform.position = new Vector3(Mathf.Round(transform.position.x), transform.position.y, Mathf.Round(transform.position.z)); 
 			if (horizontal != 0 || vertical  != 0)
 			{
@@ -53,6 +53,8 @@ public class CharController : MonoBehaviour
 				isMoving = true;
 				//rb.velocity = facingDirection * moveSpeed;
 			}
+
+			rb.MovePosition(new Vector3(Mathf.Round(transform.position.x), transform.position.y, Mathf.Round(transform.position.z)));
 		}
 		else if (isMoving && (destination - rb.position).magnitude < E)
 		//else if (Mathf.Abs(distance.x) >= 1f || Mathf.Abs(distance.z) >= 1f)

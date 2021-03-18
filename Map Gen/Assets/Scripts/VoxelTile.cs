@@ -114,13 +114,15 @@ public class VoxelTile : MonoBehaviour
 
         if (Physics.Raycast(new Ray(origin: rayStart, direction), out RaycastHit hit, vox))
         {
-            Mesh mesh = meshCollider.sharedMesh;
+         
+            byte colorIndex = (byte)(hit.textureCoord.x * 256);
 
-            int hitTriangleVertex = mesh.triangles[hit.triangleIndex * 3];
-            byte colorIndex = (byte)(mesh.uv[hitTriangleVertex].x * 256);
+            if (colorIndex == 0) Debug.LogWarning(message:"Found color 0 in palette, trouble");
+
             return colorIndex;
         }
 
         return 0;
     }
+
 }
