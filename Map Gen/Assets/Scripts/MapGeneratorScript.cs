@@ -37,7 +37,7 @@ public class MapGeneratorScript : MonoBehaviour
                     TilePrefabs[i].Frequency /= 2;
                     if (TilePrefabs[i].Frequency <= 0) TilePrefabs[i].Frequency = 1;
 
-                    clone = Instantiate(TilePrefabs[i], position: TilePrefabs[i].transform.position, Quaternion.identity );
+                    clone = Instantiate(TilePrefabs[i], position: TilePrefabs[i].transform.position + Vector3.back * VoxelSize * TileSideVoxels * 2, Quaternion.identity );
                     clone.Rotate90();
                     TilePrefabs.Add(clone);
                     break;
@@ -46,14 +46,14 @@ public class MapGeneratorScript : MonoBehaviour
                     TilePrefabs[i].Frequency /= 4;
                     if (TilePrefabs[i].Frequency <= 0) TilePrefabs[i].Frequency = 1;
 
-                    clone = Instantiate(TilePrefabs[i], position: TilePrefabs[i].transform.position, Quaternion.identity);
+                    clone = Instantiate(TilePrefabs[i], position: TilePrefabs[i].transform.position + Vector3.back * VoxelSize * TileSideVoxels * 2, Quaternion.identity);
                     clone.Rotate90();
                     TilePrefabs.Add(clone);
-                    clone = Instantiate(TilePrefabs[i], position: TilePrefabs[i].transform.position, Quaternion.identity);
+                    clone = Instantiate(TilePrefabs[i], position: TilePrefabs[i].transform.position + Vector3.back * VoxelSize * TileSideVoxels * 4, Quaternion.identity);
                     clone.Rotate90();
                     clone.Rotate90();
                     TilePrefabs.Add(clone);
-                    clone = Instantiate(TilePrefabs[i], position: TilePrefabs[i].transform.position, Quaternion.identity);
+                    clone = Instantiate(TilePrefabs[i], position: TilePrefabs[i].transform.position + Vector3.back * VoxelSize * TileSideVoxels * 6, Quaternion.identity);
                     clone.Rotate90();
                     clone.Rotate90();
                     clone.Rotate90();
