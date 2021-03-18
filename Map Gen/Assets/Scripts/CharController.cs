@@ -12,14 +12,15 @@ public class CharController : MonoBehaviour
 	
 	//Move
     public float moveSpeed = 20f;
-    Vector3 forward, right, direction, rightMovement, upMovement; 
     public float turnTime = 0.1f;
     public float turnVelocity;   
     
+    public Vector3 direction;
+    public Vector3 newDirection;
     private bool isMoving;
+    private bool hadTurned;
     public Vector3 startPosition;
     public Vector3 destination;
-    public Vector3 facingDirection;
     public float horizontal;
     public float vertical;
     public float E = new Vector3(0.01f, 0.01f, 0.01f).magnitude;
@@ -30,7 +31,8 @@ public class CharController : MonoBehaviour
     {
     	rb = GetComponent<Rigidbody>();
     	isMoving = false;
-		startPosition = new Vector3(0, 2, 0);
+    	hadTurned = false;
+		startPosition = new Vector3(0, 4, 0);
 		transform.position = startPosition;
 		
     }
@@ -39,32 +41,35 @@ public class CharController : MonoBehaviour
     {
     	horizontal = Input.GetAxisRaw("Horizontal");
 		vertical = Input.GetAxisRaw("Vertical");
+		newDirection = Quaternion.Euler(0, 45, 0) * new Vector3(horizontal, 0f, vertical);
+		newDirection = new Vector3(Mathf.Round(newDirection.x), 0f, Mathf.Round(newDirection.z));
     	if (!isMoving)
 	    {
-			//horizontal = Input.GetAxisRaw("Horizontal");
-			//vertical = Input.GetAxisRaw("Vertical");
-			rb.MovePosition(new Vector3(Mathf.Round(transform.position.x), transform.position.y, Mathf.Round(transform.position.z)));
-			//transform.position = new Vector3(Mathf.Round(transform.position.x), transform.position.y, Mathf.Round(transform.position.z)); 
+			//rb.MovePosition(new Vector3(Mathf.Round(transform.position.x), transform.position.y, Mathf.Round(transform.position.z)));
 			if (horizontal != 0 || vertical  != 0)
 			{
-				facingDirection = Quaternion.Euler(0, 45, 0) * new Vector3(horizontal, 0f, vertical);
-				startPosition = transform.position;
-				destination = startPosition + facingDirection;
+				direction = newDirection;
+				startPosition = new Vector3(Mathf.Round(transform.position.x), transform.position.y, Mathf.Round(transform.position.z));
+				destination = startPosition + direction;
 				isMoving = true;
-				//rb.velocity = facingDirection * moveSpeed;
 			}
+			
 		}
+		
 		else if (isMoving && (destination - rb.position).magnitude < E)
-		//else if (Mathf.Abs(distance.x) >= 1f || Mathf.Abs(distance.z) >= 1f)
 		{
-			isMoving = false;
-			distance = Vector3.zero;
-			//rb.velocity = Vector3.zero;
+				isMoving = false;
+				hadTurned = false;
 		}
 		else if (isMoving)
 		{
-			rb.MovePosition(transform.position + facingDirection * moveSpeed * Time.deltaTime);
-			distance += (transform.position + facingDirection * moveSpeed * Time.deltaTime);
+			if (direction.magnitude < newDirection.magnitude && (newDirection.x != direction.x ^ newDirection.z != direction.z) && !hadTurned)
+			{
+				hadTurned = true;
+				direction = newDirection;
+				destination = startPosition + direction;
+			}
+			rb.MovePosition(transform.position + (destination - transform.position).normalized * moveSpeed * Time.deltaTime);
 		}
 		
 		float targetAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg + cam.eulerAngles.y;
