@@ -88,7 +88,7 @@ public class MapGeneratorScript : MonoBehaviour
         {
             for (int y = 1; y < MapSize.y - 1; y++)
             {
-                yield return new WaitForSeconds(0.001f);
+                yield return new WaitForSeconds(0.000000001f);
 
                 PlaceTile(x, y);
             }
