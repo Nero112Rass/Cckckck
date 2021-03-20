@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class CharController : MonoBehaviour
 {
 
 	private Rigidbody rb;
+
 	
 	//public CharacterController controller;
 	public Transform cam;
@@ -24,9 +26,8 @@ public class CharController : MonoBehaviour
     public float horizontal;
     public float vertical;
     public float E = new Vector3(0.01f, 0.01f, 0.01f).magnitude;
-    public Vector3 distance;
-    //LittleDash
     
+	// Main
     void Start()
     {
     	rb = GetComponent<Rigidbody>();
@@ -43,9 +44,9 @@ public class CharController : MonoBehaviour
 		vertical = Input.GetAxisRaw("Vertical");
 		newDirection = Quaternion.Euler(0, 45, 0) * new Vector3(horizontal, 0f, vertical);
 		newDirection = new Vector3(Mathf.Round(newDirection.x), 0f, Mathf.Round(newDirection.z));
+		// Initiate movement
     	if (!isMoving)
 	    {
-			//rb.MovePosition(new Vector3(Mathf.Round(transform.position.x), transform.position.y, Mathf.Round(transform.position.z)));
 			if (horizontal != 0 || vertical  != 0)
 			{
 				direction = newDirection;
@@ -53,23 +54,26 @@ public class CharController : MonoBehaviour
 				destination = startPosition + direction;
 				isMoving = true;
 			}
-			
 		}
-		
+		// Finish moving
 		else if (isMoving && (destination - rb.position).magnitude < E)
 		{
-				isMoving = false;
-				hadTurned = false;
+			isMoving = false;
+			hadTurned = false;
+			//rb.velocity = Vector3.zero;
 		}
+		// Move character
 		else if (isMoving)
 		{
-			if (direction.magnitude < newDirection.magnitude && (newDirection.x != direction.x ^ newDirection.z != direction.z) && !hadTurned)
+			// Turn one time while mowing
+			if (direction.magnitude > newDirection.magnitude && (newDirection.x != direction.x ^ newDirection.z != direction.z) && !hadTurned)
 			{
 				hadTurned = true;
 				direction = newDirection;
 				destination = startPosition + direction;
 			}
 			rb.MovePosition(transform.position + (destination - transform.position).normalized * moveSpeed * Time.deltaTime);
+			//rb.velocity = ((destination - transform.position).normalized * moveSpeed * Time.deltaTime);
 		}
 		
 		float targetAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg + cam.eulerAngles.y;
