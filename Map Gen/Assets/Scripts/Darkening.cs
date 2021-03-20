@@ -12,9 +12,6 @@ public class Darkening : MonoBehaviour
     Color VanillaColor;
     Color DeltaColor;
 
-
-    public bool start = false;
-
     Renderer m_ObjectRenderer;
 
     void Start()
