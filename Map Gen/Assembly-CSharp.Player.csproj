@@ -57,15 +57,24 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\CharController.cs" />
+    <Compile Include="Assets\Invisible.cs" />
     <Compile Include="Assets\AssetStoreOriginals\_SNAPS_PrototypingAssets\About\Scripts\Readme.cs" />
     <Compile Include="Assets\Scripts\VoxelTile.cs" />
     <Compile Include="Assets\Scripts\WaveMapGeneratorScript.cs" />
+    <Compile Include="Assets\Visible.cs" />
     <Compile Include="Assets\AssetStoreOriginals\_SNAPS_Tools\AssetSwapTool\Scripts\SwapTool.cs" />
+    <Compile Include="Assets\Scripts\Darkening.cs" />
     <Compile Include="Assets\Scripts\CharContoller.cs" />
     <Compile Include="Assets\AssetStoreOriginals\_SNAPS_Tools\AssetSwapTool\Scripts\UnpackNestedPrefab.cs" />
     <Compile Include="Assets\AssetStoreOriginals\_SNAPS_Tools\AssetSwapTool\Scripts\SwapShader.cs" />
+    <Compile Include="Assets\Scripts\Transparency.cs" />
     <Compile Include="Assets\Scripts\MapGeneratorScript.cs" />
+    <Compile Include="Assets\Scripts\Particles.cs" />
     <Compile Include="Assets\Scripts\CameraMovement.cs" />
+    <Compile Include="Assets\Scripts\ScreenPointToRay.cs" />
+    <Compile Include="Assets\Shooting.cs" />
+    <Compile Include="Assets\Missles0.cs" />
+    <Compile Include="Assets\Missles1.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\FSP\MAST\updates.txt" />

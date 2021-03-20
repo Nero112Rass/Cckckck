@@ -65,7 +65,7 @@ public class MapGeneratorScript : MonoBehaviour
             }
         }
 
-        StartCoroutine(routine: Generate());
+         Generate();
 
     }
 
@@ -73,22 +73,22 @@ public class MapGeneratorScript : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.G))
         {
-            StopAllCoroutines();
+
             foreach (VoxelTile spawnedTile in spawnedTiles)
             {
                 if (spawnedTile != null) Destroy(spawnedTile.gameObject);
             }
-            StartCoroutine(routine: Generate());
+            Generate();
         }
     }
 
-    public IEnumerator Generate()
+    public void Generate()
     {
         for (int x = 1; x < MapSize.x - 1; x++)
         {
             for (int y = 1; y < MapSize.y - 1; y++)
             {
-                yield return new WaitForSeconds(0.001f);
+                
 
                 PlaceTile(x, y);
             }
