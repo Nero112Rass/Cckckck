@@ -18,7 +18,7 @@ public class ScreenPointToRay : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButton(0))
         {
 
 
@@ -32,7 +32,7 @@ public class ScreenPointToRay : MonoBehaviour
 
 
         }
-        if (Input.GetMouseButtonDown(1))
+        if (Input.GetMouseButton(1))
         {
 
 
