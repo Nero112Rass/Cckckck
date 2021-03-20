@@ -122,7 +122,7 @@ NavMeshSettings:
     preserveTilesOutsideBounds: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 0}
+  m_NavMeshData: {fileID: 23800000, guid: c0c0474d5cb1ca149809e7fa6f0a4115, type: 2}
 --- !u!1 &1144592 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: c6a601a54da5dcf4d85965ed44cedfe1, type: 3}
@@ -424,6 +424,8 @@ GameObject:
   - component: {fileID: 34590925}
   - component: {fileID: 34590931}
   - component: {fileID: 34590932}
+  - component: {fileID: 34590934}
+  - component: {fileID: 34590933}
   m_Layer: 0
   m_Name: player
   m_TagString: Player
@@ -438,7 +440,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 34590924}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a0009d4472c48b5449fd75f4cb0f42f5, type: 3}
   m_Name: 
@@ -574,7 +576,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 34590924}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 07ab96012555e1441b11557451e1c5c6, type: 3}
   m_Name: 
@@ -585,6 +587,53 @@ MonoBehaviour:
   MisslePrefabs1:
   - {fileID: 2918864318396781000, guid: 0a6fe852d0962d44894ebd93234ff4b8, type: 3}
   - {fileID: 5047218982689749017, guid: 080691bbdf2aa4d44878e697d9cb6692, type: 3}
+--- !u!195 &34590933
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 34590924}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 1
+  m_BaseOffset: 0.5
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
+--- !u!114 &34590934
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 34590924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd8a302681f2fd44186e53a23929f362, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  agent: {fileID: 34590933}
+  cam: {fileID: 1619637080}
+  moveSpeed: 20
+  turnTime: 0.1
+  turnVelocity: 0
+  direction: {x: 0, y: 0, z: 0}
+  newDirection: {x: 0, y: 0, z: 0}
+  isMoving: 0
+  startPosition: {x: 0, y: 0, z: 0}
+  destination: {x: 0, y: 0, z: 0}
+  horizontal: 0
+  vertical: 0
+  E: 0.3
 --- !u!1001 &39791483
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18481,7 +18530,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2027875694}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5218f95810b84264d9559adb82277360, type: 3}
   m_Name: 
@@ -18562,7 +18611,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2027875694}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7f661eeb3694fa543a04db4307af3626, type: 3}
   m_Name: 
