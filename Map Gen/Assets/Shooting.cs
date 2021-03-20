@@ -1,6 +1,9 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+
+using System.Linq;
 
 public class Shooting : MonoBehaviour
 {
@@ -11,6 +14,10 @@ public class Shooting : MonoBehaviour
 
     public List<Missles0> MisslePrefabs0;
     public List<Missles1> MisslePrefabs1;
+
+
+
+
 
 
 
@@ -25,6 +32,9 @@ public class Shooting : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+
+
         if (Input.GetMouseButton(0))
         {
 

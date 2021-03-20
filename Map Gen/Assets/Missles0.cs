@@ -1,14 +1,16 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+using System.Linq;
+
 
 public class Missles0 : MonoBehaviour
-{    Color DeltaColor;
+{    
+    Color DeltaColor;
 
     public Vector3 target;
-
-    public bool start = false;
 
     Renderer m_ObjectRenderer;
 
@@ -22,17 +24,21 @@ public class Missles0 : MonoBehaviour
 
 
 
+    public List<Missles0> MisslePrefabs0;
+
 
     public Vector3 placeChasing;
 
     public ScreenPointToRay ClickPosition;
     void Start()
     {
+
+
         target = GameObject.Find("Camera").GetComponent<ScreenPointToRay>().clickPosition0;
         target += new Vector3(0, 1, 0);
         playerChasing = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
 
-        
+
 
         m_ObjectRenderer = GetComponent<Renderer>();
 
@@ -82,6 +88,7 @@ public class Missles0 : MonoBehaviour
 
         if (Vector3.Distance(gameObject.transform.position, target) <= 1)
         {
+            
             DeltaColor = m_ObjectRenderer.material.color;
             if (DeltaColor.a >= 0)
             {
@@ -95,7 +102,12 @@ public class Missles0 : MonoBehaviour
             }
             
         }
-        
+
+        if (Vector3.Distance(gameObject.transform.position, target) <= 1)
+        {
+            Destroy(gameObject);
+        }
+
     }
 
     
