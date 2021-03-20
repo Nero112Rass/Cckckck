@@ -46,6 +46,12 @@ public class OneMoreController : MonoBehaviour
         vertical = Input.GetAxisRaw("Vertical");
         newDirection = Quaternion.Euler(0, 45, 0) * new Vector3(horizontal, 0f, vertical);
         newDirection = new Vector3(Mathf.Round(newDirection.x), 0f, Mathf.Round(newDirection.z));
+        /*
+        if (horizontal != 0 || vertical != 0)
+            agent.autoBraking = false;
+        else
+            agent.autoBraking = true;
+        */
         // Initiate movement
         if (!isMoving)
         {
@@ -58,22 +64,26 @@ public class OneMoreController : MonoBehaviour
                 agent.SetDestination(destination);
             }
         }
+        // Turn
+        else if (agent.hasPath)
+        {
+            if ((destination - transform.position).magnitude < E)
+            {
+                agent.SetDestination(destination + newDirection);
+            }
+            if (direction.magnitude > newDirection.magnitude && (newDirection.x != direction.x ^ newDirection.z != direction.z) && !hadTurned)
+            {
+                hadTurned = true;
+                direction = newDirection;
+                destination = startPosition + direction;
+                agent.SetDestination(destination);
+            }
+        }
         // Finish moving
-        else if (isMoving && (destination - rb.position).magnitude < E)
+        else if (!agent.hasPath)
         {
             isMoving = false;
             hadTurned = false;
         }
-        /*
-        if (Input.GetMouseButtonDown (0))
-        {
-            RaycastHit hit;
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            if (Physics.Raycast(ray, out hit, Mathf.Infinity))
-            {
-                agent.SetDestination(hit.point);
-            }
-        }
-        */
     }
 }
