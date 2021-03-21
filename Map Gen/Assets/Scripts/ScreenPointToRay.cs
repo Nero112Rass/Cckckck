@@ -10,6 +10,13 @@ public class ScreenPointToRay : MonoBehaviour
     
     public Vector3 clickPosition0;
     public Vector3 clickPosition1;
+
+    public Vector3 cursorPosition;
+
+    public Vector3 groundLevelCursorPosition;
+
+    public LayerMask groundLayer;
+
     private void Start()
     {
 
@@ -45,5 +52,25 @@ public class ScreenPointToRay : MonoBehaviour
             }
 
         }
+
+        Ray rayC = Camera.main.ScreenPointToRay(Input.mousePosition);
+        RaycastHit hitC;
+
+        if (Physics.Raycast(rayC, out hitC))
+        {
+            cursorPosition = hitC.point;
+
+        }
+
+
+        Ray rayG = Camera.main.ScreenPointToRay(Input.mousePosition);
+        RaycastHit hitG;
+        if (Physics.Raycast(rayG, out hitG, 100f, groundLayer))
+        {
+            groundLevelCursorPosition = hitG.point;
+
+        }
+
+
     }
 }
