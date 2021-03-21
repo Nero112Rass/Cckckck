@@ -47,26 +47,26 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\MisslesCooldown1.cs" />
-     <Compile Include="Assets\Scripts\Missles0.cs" />
-     <Compile Include="Assets\Scripts\CharController.cs" />
-     <Compile Include="Assets\Scripts\Missles1.cs" />
+     <Compile Include="Assets\Scripts\Projectile\MisslesCooldown1.cs" />
+     <Compile Include="Assets\Scripts\Projectile\Missles0.cs" />
+     <Compile Include="Assets\Scripts\Character\CharController.cs" />
+     <Compile Include="Assets\Scripts\Projectile\Missles1.cs" />
      <Compile Include="Assets\AssetStoreOriginals\_SNAPS_PrototypingAssets\About\Scripts\Readme.cs" />
-     <Compile Include="Assets\Scripts\VoxelTile.cs" />
-     <Compile Include="Assets\Scripts\ScreenPointToRay.cs" />
-     <Compile Include="Assets\Scripts\WaveMapGeneratorScript.cs" />
+     <Compile Include="Assets\Scripts\Map\VoxelTile.cs" />
+     <Compile Include="Assets\Scripts\Map\ScreenPointToRay.cs" />
+     <Compile Include="Assets\Scripts\Map\WaveMapGeneratorScript.cs" />
      <Compile Include="Assets\AssetStoreOriginals\_SNAPS_Tools\AssetSwapTool\Scripts\SwapTool.cs" />
-     <Compile Include="Assets\Scripts\OneMoreController.cs" />
-     <Compile Include="Assets\MisslesCooldow0n.cs" />
-     <Compile Include="Assets\Scripts\Darkening.cs" />
-     <Compile Include="Assets\Scripts\CharContoller.cs" />
+     <Compile Include="Assets\Scripts\Character\OneMoreController.cs" />
+     <Compile Include="Assets\Scripts\Projectile\MisslesCooldow0n.cs" />
+     <Compile Include="Assets\Scripts\Map\Darkening.cs" />
+     <Compile Include="Assets\Scripts\Character\CharContoller.cs" />
      <Compile Include="Assets\AssetStoreOriginals\_SNAPS_Tools\AssetSwapTool\Scripts\UnpackNestedPrefab.cs" />
-     <Compile Include="Assets\Scripts\Shooting.cs" />
+     <Compile Include="Assets\Scripts\Character\Shooting.cs" />
      <Compile Include="Assets\AssetStoreOriginals\_SNAPS_Tools\AssetSwapTool\Scripts\SwapShader.cs" />
-     <Compile Include="Assets\Scripts\Transparency.cs" />
-     <Compile Include="Assets\Scripts\MapGeneratorScript.cs" />
-     <Compile Include="Assets\Scripts\Particles.cs" />
-     <Compile Include="Assets\Scripts\CameraMovement.cs" />
+     <Compile Include="Assets\Scripts\Map\Transparency.cs" />
+     <Compile Include="Assets\Scripts\Map\MapGeneratorScript.cs" />
+     <Compile Include="Assets\Scripts\Map\Particles.cs" />
+     <Compile Include="Assets\Scripts\Camera\CameraMovement.cs" />
      <None Include="Assets\FSP\MAST\updates.txt" />
      <None Include="Assets\FSP\MAST\Etc\Shader_PaintArea_URP.shader" />
      <None Include="Assets\FSP\MAST\Etc\Shader_Eraser_SRP.shader" />
