@@ -56,6 +56,7 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\MisslesCooldown1.cs" />
     <Compile Include="Assets\Scripts\Missles0.cs" />
     <Compile Include="Assets\Scripts\CharController.cs" />
     <Compile Include="Assets\Scripts\Missles1.cs" />
@@ -65,6 +66,7 @@
     <Compile Include="Assets\Scripts\WaveMapGeneratorScript.cs" />
     <Compile Include="Assets\AssetStoreOriginals\_SNAPS_Tools\AssetSwapTool\Scripts\SwapTool.cs" />
     <Compile Include="Assets\Scripts\OneMoreController.cs" />
+    <Compile Include="Assets\MisslesCooldow0n.cs" />
     <Compile Include="Assets\Scripts\Darkening.cs" />
     <Compile Include="Assets\Scripts\CharContoller.cs" />
     <Compile Include="Assets\AssetStoreOriginals\_SNAPS_Tools\AssetSwapTool\Scripts\UnpackNestedPrefab.cs" />
@@ -74,13 +76,16 @@
     <Compile Include="Assets\Scripts\MapGeneratorScript.cs" />
     <Compile Include="Assets\Scripts\Particles.cs" />
     <Compile Include="Assets\Scripts\CameraMovement.cs" />
-    <Compile Include="Assets\MisslesCooldow0n.cs" />
-    <Compile Include="Assets\MisslesCooldown1.cs" />
+    <Compile Include="Assets\Scripts\CursorChasing.cs" />
+    <Compile Include="Assets\Huge Mocap Library\demo\scripts\demo.cs" />
+    <Compile Include="Assets\Huge Mocap Library\demo\scripts\smoothFollow.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\FSP\MAST\updates.txt" />
      <None Include="Assets\FSP\MAST\Etc\Shader_PaintArea_URP.shader" />
      <None Include="Assets\FSP\MAST\Etc\Shader_Eraser_SRP.shader" />
+     <None Include="Assets\Huge Mocap Library\mocap animations\cmu-mocap-index-text.txt" />
+     <None Include="Assets\Huge Mocap Library\READTHIS.txt" />
      <None Include="Assets\FSP\MAST\License.txt" />
      <None Include="Assets\FSP\MAST\Etc\Shader_Eraser_URP.shader" />
      <None Include="Assets\FSP\MAST\URPConversion.txt" />
@@ -313,6 +318,18 @@
     </Reference>
     <Reference Include="Unity.ProGrids.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.ProGrids.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Mathematics.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Mathematics.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Animation.Rigging.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Animation.Rigging.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Burst.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Burst.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Burst.Unsafe">
+      <HintPath>Library\PackageCache\com.unity.burst@1.3.4\Unity.Burst.Unsafe.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:\User\Programmes\Unity\2020.3.0f1\Editor\Data\NetStandard\ref\2.0.0\netstandard.dll</HintPath>
@@ -680,6 +697,18 @@
     <ProjectReference Include="UnityEngine.UI.csproj">
       <Project>{8A43F5C5-F158-F1E8-A339-B5B2188CC5D5}</Project>
       <Name>UnityEngine.UI</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Mathematics.csproj">
+      <Project>{07D4A0DC-8B37-7518-BAF7-41C898961ADF}</Project>
+      <Name>Unity.Mathematics</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Burst.csproj">
+      <Project>{A2C02525-81E0-4B81-C51A-A2E19712B83D}</Project>
+      <Name>Unity.Burst</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Animation.Rigging.csproj">
+      <Project>{F1F3AB73-1DF5-A277-FE88-A05D9EE13D23}</Project>
+      <Name>Unity.Animation.Rigging</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
