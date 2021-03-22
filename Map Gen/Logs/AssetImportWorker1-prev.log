@@ -1,0 +1,21 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.0f1 (c7b5465681fb) revision 13088070'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Education; OS build 17134.2087; Version 1803; 64bit' Language: 'ru' Physical Memory: 16366 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\User\Programmes\Unity\2020.3.0f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker1
+-projectPath
+A:/Games/Unity Scetches/Cckckck/Map Gen
+-logFile
+Logs/AssetImportWorker1.log
+-srvPort
+4202
+Successfully changed project path to: A:/Games/Unity Scetches/Cckckck/Map Gen
+A:/Games/Unity Scetches/Cckckck/Map Gen
+Using Asset Import Pipeline V2.

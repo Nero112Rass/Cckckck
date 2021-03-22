@@ -39,7 +39,7 @@ public class Shooting : MonoBehaviour
         {
 
 
-                Instantiate(MisslePrefabs0[0], transform.position + new Vector3 (-1, -1, 1), Quaternion.identity);
+                Instantiate(MisslePrefabs0[0], transform.position + new Vector3 (-1/2, -1, 1/2), Quaternion.identity);
 
         }
 
@@ -47,7 +47,7 @@ public class Shooting : MonoBehaviour
         {
 
 
-                Instantiate(MisslePrefabs1[0], transform.position + new Vector3(1, -1, -1), Quaternion.identity);
+                Instantiate(MisslePrefabs1[0], transform.position + new Vector3(1/2, -1, -1/2), Quaternion.identity);
 
         }
 
@@ -55,7 +55,7 @@ public class Shooting : MonoBehaviour
         {
 
 
-            Instantiate(MisslePrefabs0[1], transform.position + new Vector3(-1, -1, 1), Quaternion.identity);
+            Instantiate(MisslePrefabs0[1], transform.position + new Vector3(-1/2, -1, 1/2), Quaternion.identity);
 
         }
 
@@ -63,7 +63,7 @@ public class Shooting : MonoBehaviour
         {
 
 
-            Instantiate(MisslePrefabs1[1], transform.position + new Vector3(1, -1, -1), Quaternion.identity);
+            Instantiate(MisslePrefabs1[1], transform.position + new Vector3(1/2, -1, -1/2), Quaternion.identity);
 
         }
 

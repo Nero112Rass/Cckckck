@@ -56,29 +56,30 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\MisslesCooldown1.cs" />
-    <Compile Include="Assets\Scripts\Missles0.cs" />
-    <Compile Include="Assets\Scripts\CharController.cs" />
-    <Compile Include="Assets\Scripts\Missles1.cs" />
-    <Compile Include="Assets\AssetStoreOriginals\_SNAPS_PrototypingAssets\About\Scripts\Readme.cs" />
-    <Compile Include="Assets\Scripts\VoxelTile.cs" />
-    <Compile Include="Assets\Scripts\ScreenPointToRay.cs" />
-    <Compile Include="Assets\Scripts\WaveMapGeneratorScript.cs" />
-    <Compile Include="Assets\AssetStoreOriginals\_SNAPS_Tools\AssetSwapTool\Scripts\SwapTool.cs" />
-    <Compile Include="Assets\Scripts\OneMoreController.cs" />
-    <Compile Include="Assets\MisslesCooldow0n.cs" />
-    <Compile Include="Assets\Scripts\Darkening.cs" />
-    <Compile Include="Assets\Scripts\CharContoller.cs" />
-    <Compile Include="Assets\AssetStoreOriginals\_SNAPS_Tools\AssetSwapTool\Scripts\UnpackNestedPrefab.cs" />
-    <Compile Include="Assets\Scripts\Shooting.cs" />
-    <Compile Include="Assets\AssetStoreOriginals\_SNAPS_Tools\AssetSwapTool\Scripts\SwapShader.cs" />
-    <Compile Include="Assets\Scripts\Transparency.cs" />
-    <Compile Include="Assets\Scripts\MapGeneratorScript.cs" />
-    <Compile Include="Assets\Scripts\Particles.cs" />
-    <Compile Include="Assets\Scripts\CameraMovement.cs" />
-    <Compile Include="Assets\Scripts\CursorChasing.cs" />
-    <Compile Include="Assets\Huge Mocap Library\demo\scripts\demo.cs" />
+    <Compile Include="Assets\Scripts\Projectile\MisslesCooldown1.cs" />
+    <Compile Include="Assets\Scripts\Camera\CursorChasing.cs" />
+    <Compile Include="Assets\Scripts\Projectile\Missles0.cs" />
+    <Compile Include="Assets\Scripts\Character\CharController.cs" />
+    <Compile Include="Assets\Scripts\Projectile\Missles1.cs" />
     <Compile Include="Assets\Huge Mocap Library\demo\scripts\smoothFollow.cs" />
+    <Compile Include="Assets\Huge Mocap Library\demo\scripts\demo.cs" />
+    <Compile Include="Assets\AssetStoreOriginals\_SNAPS_PrototypingAssets\About\Scripts\Readme.cs" />
+    <Compile Include="Assets\Scripts\Map\VoxelTile.cs" />
+    <Compile Include="Assets\Scripts\Map\ScreenPointToRay.cs" />
+    <Compile Include="Assets\Scripts\Map\WaveMapGeneratorScript.cs" />
+    <Compile Include="Assets\AssetStoreOriginals\_SNAPS_Tools\AssetSwapTool\Scripts\SwapTool.cs" />
+    <Compile Include="Assets\Scripts\Character\OneMoreController.cs" />
+    <Compile Include="Assets\Scripts\Projectile\MisslesCooldow0n.cs" />
+    <Compile Include="Assets\Scripts\Map\Darkening.cs" />
+    <Compile Include="Assets\Scripts\Character\CharContoller.cs" />
+    <Compile Include="Assets\AssetStoreOriginals\_SNAPS_Tools\AssetSwapTool\Scripts\UnpackNestedPrefab.cs" />
+    <Compile Include="Assets\Scripts\Character\Shooting.cs" />
+    <Compile Include="Assets\AssetStoreOriginals\_SNAPS_Tools\AssetSwapTool\Scripts\SwapShader.cs" />
+    <Compile Include="Assets\Scripts\Map\Transparency.cs" />
+    <Compile Include="Assets\Scripts\Map\MapGeneratorScript.cs" />
+    <Compile Include="Assets\Scripts\Map\Particles.cs" />
+    <Compile Include="Assets\Scripts\Camera\CameraMovement.cs" />
+    <Compile Include="Assets\AnimationInput.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\FSP\MAST\updates.txt" />
@@ -292,9 +293,6 @@
     <Reference Include="Unity.VSCode.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.ProBuilder.AssetIdRemapUtility">
-      <HintPath>Library\ScriptAssemblies\Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
@@ -304,8 +302,8 @@
     <Reference Include="Unity.ProBuilder.AddOns.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.ProBuilder.AddOns.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Timeline.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
+    <Reference Include="Unity.Burst.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Burst.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ProBuilder.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.ProBuilder.Editor.dll</HintPath>
@@ -319,14 +317,17 @@
     <Reference Include="Unity.ProGrids.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.ProGrids.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.ProBuilder.AssetIdRemapUtility">
+      <HintPath>Library\ScriptAssemblies\Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Timeline.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.Mathematics.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.Mathematics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Animation.Rigging.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.Animation.Rigging.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Burst.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.Burst.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Burst.Unsafe">
       <HintPath>Library\PackageCache\com.unity.burst@1.3.4\Unity.Burst.Unsafe.dll</HintPath>
@@ -690,13 +691,13 @@
       <Project>{0DFFB1FD-B9EC-9767-17C0-674AEE3E0B06}</Project>
       <Name>Unity.ProBuilder</Name>
     </ProjectReference>
-    <ProjectReference Include="Unity.ProGrids.csproj">
-      <Project>{B589FFC2-041E-447E-86C9-AD8CB6C1A1FC}</Project>
-      <Name>Unity.ProGrids</Name>
-    </ProjectReference>
     <ProjectReference Include="UnityEngine.UI.csproj">
       <Project>{8A43F5C5-F158-F1E8-A339-B5B2188CC5D5}</Project>
       <Name>UnityEngine.UI</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Animation.Rigging.csproj">
+      <Project>{F1F3AB73-1DF5-A277-FE88-A05D9EE13D23}</Project>
+      <Name>Unity.Animation.Rigging</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Mathematics.csproj">
       <Project>{07D4A0DC-8B37-7518-BAF7-41C898961ADF}</Project>
@@ -706,9 +707,9 @@
       <Project>{A2C02525-81E0-4B81-C51A-A2E19712B83D}</Project>
       <Name>Unity.Burst</Name>
     </ProjectReference>
-    <ProjectReference Include="Unity.Animation.Rigging.csproj">
-      <Project>{F1F3AB73-1DF5-A277-FE88-A05D9EE13D23}</Project>
-      <Name>Unity.Animation.Rigging</Name>
+    <ProjectReference Include="Unity.ProGrids.csproj">
+      <Project>{B589FFC2-041E-447E-86C9-AD8CB6C1A1FC}</Project>
+      <Name>Unity.ProGrids</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -36,7 +36,7 @@ public class Missles0 : MonoBehaviour
 
         target = GameObject.Find("Camera").GetComponent<ScreenPointToRay>().clickPosition0;
         target += new Vector3(0, 1, 0);
-        playerChasing = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+        playerChasing = GameObject.Find("Bip001 L Hand").GetComponent<Transform>();
 
 
 
@@ -82,7 +82,7 @@ public class Missles0 : MonoBehaviour
         if (DeltaColor.a < 1)
         {
             if (Vector3.Distance(gameObject.transform.position, target) > 1)
-                transform.position = Vector3.Lerp(transform.position, playerChasing.position + new Vector3 (-1,1,1), 5*Time.deltaTime);
+                transform.position = Vector3.Lerp(transform.position, playerChasing.position + new Vector3 (1/2,1,-1/2), 5*Time.deltaTime);
         }
 
 
