@@ -2,6 +2,7 @@ Using pre-set license
 Built from '2020.3/staging' branch; Version is '2020.3.0f1 (c7b5465681fb) revision 13088070'; Using compiler version '192528614'; Build Type 'Release'
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 OS: 'Windows 10 Home Single Language; OS build 19041.867; Version 2004; 64bit' Language: 'ru' Physical Memory: 16268 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
@@ -10,12 +11,17 @@ D:\Program Files\Unity\Hub\Editor\2020.3.0f1\Editor\Unity.exe
 =======
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 OS: 'Windows 10 Education; OS build 17134.2087; Version 1803; 64bit' Language: 'ru' Physical Memory: 16366 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
  COMMAND LINE ARGUMENTS:
 C:\User\Programmes\Unity\2020.3.0f1\Editor\Unity.exe
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -25,6 +31,7 @@ C:\User\Programmes\Unity\2020.3.0f1\Editor\Unity.exe
 -name
 AssetImportWorker0
 -projectPath
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 C:/GitHub/Cckckck/Map Gen
@@ -724,6 +731,8 @@ AssetImportWorkerClient::OnTransportError - code=2 error=End of file
 =======
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 A:/Games/Unity Scetches/Cckckck/Map Gen
 -logFile
 Logs/AssetImportWorker0.log
@@ -732,6 +741,9 @@ Logs/AssetImportWorker0.log
 Successfully changed project path to: A:/Games/Unity Scetches/Cckckck/Map Gen
 A:/Games/Unity Scetches/Cckckck/Map Gen
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
