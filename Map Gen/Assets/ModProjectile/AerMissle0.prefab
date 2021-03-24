@@ -117,6 +117,14 @@ MonoBehaviour:
   MisslePrefabs0: []
   placeChasing: {x: 0, y: 0, z: 0}
   ClickPosition: {fileID: 0}
+  fireMana: 0
+  waterMana: 0
+  earthMana: 0
+  aerMana: 1
+  darkMana: 0
+  lightMana: 0
+  cooldown: 1
+  empowered: 0
 --- !u!1001 &1197952139128786339
 PrefabInstance:
   m_ObjectHideFlags: 0

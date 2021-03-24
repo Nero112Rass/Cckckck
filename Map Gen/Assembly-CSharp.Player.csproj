@@ -56,7 +56,6 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Projectile\MisslesCooldown1.cs" />
     <Compile Include="Assets\Scripts\Camera\CursorChasing.cs" />
     <Compile Include="Assets\Scripts\Projectile\Missles0.cs" />
     <Compile Include="Assets\Scripts\Character\CharController.cs" />
@@ -67,9 +66,10 @@
     <Compile Include="Assets\Scripts\Map\VoxelTile.cs" />
     <Compile Include="Assets\Scripts\Map\ScreenPointToRay.cs" />
     <Compile Include="Assets\Scripts\Map\WaveMapGeneratorScript.cs" />
+    <Compile Include="Assets\AnimationInput.cs" />
     <Compile Include="Assets\AssetStoreOriginals\_SNAPS_Tools\AssetSwapTool\Scripts\SwapTool.cs" />
+    <Compile Include="Assets\Scripts\Character\Blyat.cs" />
     <Compile Include="Assets\Scripts\Character\OneMoreController.cs" />
-    <Compile Include="Assets\Scripts\Projectile\MisslesCooldow0n.cs" />
     <Compile Include="Assets\Scripts\Map\Darkening.cs" />
     <Compile Include="Assets\Scripts\Character\CharContoller.cs" />
     <Compile Include="Assets\AssetStoreOriginals\_SNAPS_Tools\AssetSwapTool\Scripts\UnpackNestedPrefab.cs" />
@@ -79,7 +79,11 @@
     <Compile Include="Assets\Scripts\Map\MapGeneratorScript.cs" />
     <Compile Include="Assets\Scripts\Map\Particles.cs" />
     <Compile Include="Assets\Scripts\Camera\CameraMovement.cs" />
-    <Compile Include="Assets\AnimationInput.cs" />
+    <Compile Include="Assets\Scripts\Map\WaveMapGeneratorScript1.cs" />
+    <Compile Include="Assets\Scripts\Map\WaveMapGeneratorScript2.cs" />
+    <Compile Include="Assets\Scripts\Map\WaveMapGeneratorScript3.cs" />
+    <Compile Include="Assets\Scripts\Projectile\MagicBurst0.cs" />
+    <Compile Include="Assets\Scripts\Projectile\MagicBurst1.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\FSP\MAST\updates.txt" />

@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7758064418335870150}
   - component: {fileID: 7758064418335870149}
   m_Layer: 0
-  m_Name: DarkMissle
+  m_Name: DarkMissle1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -114,10 +114,18 @@ MonoBehaviour:
   stepMove: 5
   Aura: {fileID: 5736152676490674522}
   playerChasing: {fileID: 0}
-  gotToTarget: 0
   MisslePrefabs1: []
   placeChasing: {x: 0, y: 0, z: 0}
   ClickPosition: {fileID: 0}
+  fireMana: 0
+  waterMana: 0
+  earthMana: 0
+  aerMana: 0
+  darkMana: 1
+  lightMana: 0
+  empowered: 0
+  cooldown: 1
+  burst: 1
 --- !u!1001 &7758064418228635315
 PrefabInstance:
   m_ObjectHideFlags: 0

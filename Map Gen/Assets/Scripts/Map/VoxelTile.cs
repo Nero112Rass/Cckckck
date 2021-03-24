@@ -19,17 +19,17 @@ public class VoxelTile : MonoBehaviour
     [Range(1,100)]
     public int Frequency = 50;
 
-    [HideInInspector] public byte[] ColorsRight;
-    [HideInInspector] public byte[] ColorsForward;
-    [HideInInspector] public byte[] ColorsLeft;
-    [HideInInspector] public byte[] ColorsBack;
+    [HideInInspector] public int[] ColorsRight;
+    [HideInInspector] public int[] ColorsForward;
+    [HideInInspector] public int[] ColorsLeft;
+    [HideInInspector] public int[] ColorsBack;
 
     public void CalculateSideColors()
     {
-        ColorsRight = new byte[TileSideVoxels * TileSideVoxels];
-        ColorsForward = new byte[TileSideVoxels * TileSideVoxels];
-        ColorsLeft = new byte[TileSideVoxels * TileSideVoxels];
-        ColorsBack = new byte[TileSideVoxels * TileSideVoxels];
+        ColorsRight = new int[TileSideVoxels * TileSideVoxels];
+        ColorsForward = new int[TileSideVoxels * TileSideVoxels];
+        ColorsLeft = new int[TileSideVoxels * TileSideVoxels];
+        ColorsBack = new int[TileSideVoxels * TileSideVoxels];
 
         for (int y = 0; y < TileSideVoxels; y++)
         {
@@ -48,10 +48,10 @@ public class VoxelTile : MonoBehaviour
     {
         transform.Rotate(xAngle: 0, yAngle: 90, zAngle: 0);
 
-        byte[] colorsRightNew = new byte[TileSideVoxels*TileSideVoxels];
-        byte[] colorsForwardNew = new byte[TileSideVoxels * TileSideVoxels];
-        byte[] colorsLeftNew = new byte[TileSideVoxels * TileSideVoxels];
-        byte[] colorsBackNew = new byte[TileSideVoxels * TileSideVoxels];
+        int[] colorsRightNew = new int[TileSideVoxels*TileSideVoxels];
+        int[] colorsForwardNew = new int[TileSideVoxels * TileSideVoxels];
+        int[] colorsLeftNew = new int[TileSideVoxels * TileSideVoxels];
+        int[] colorsBackNew = new int[TileSideVoxels * TileSideVoxels];
 
         for (int layer = 0; layer<TileSideVoxels; layer++)
         {
@@ -71,7 +71,7 @@ public class VoxelTile : MonoBehaviour
 
     }
 
-    private byte GetVoxelColor ( int verticalLayer, int horizontalOffset, Vector3 direction)
+    private int GetVoxelColor ( int verticalLayer, int horizontalOffset, Vector3 direction)
     {
         var meshCollider = GetComponentInChildren<MeshCollider>();
 

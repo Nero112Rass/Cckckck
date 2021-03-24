@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4068381660002043712}
   - component: {fileID: 1816885119518323830}
   m_Layer: 0
-  m_Name: FireMissle
+  m_Name: FireMissle1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -114,10 +114,17 @@ MonoBehaviour:
   stepMove: 1
   Aura: {fileID: 3390242324759336393}
   playerChasing: {fileID: 0}
-  gotToTarget: 0
   MisslePrefabs1: []
   placeChasing: {x: 0, y: 0, z: 0}
   ClickPosition: {fileID: 0}
+  fireMana: 1
+  waterMana: 0
+  earthMana: 0
+  aerMana: 0
+  darkMana: 0
+  lightMana: 0
+  empowered: 0
+  cooldown: 1
 --- !u!1001 &4068381661466532355
 PrefabInstance:
   m_ObjectHideFlags: 0

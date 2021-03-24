@@ -390,7 +390,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: 51fe39405358d9541a79033d525ed9df, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.5
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: 51fe39405358d9541a79033d525ed9df, type: 3}
       propertyPath: m_LocalPosition.z
@@ -429,13 +429,11 @@ GameObject:
   - component: {fileID: 34590930}
   - component: {fileID: 34590929}
   - component: {fileID: 34590928}
-  - component: {fileID: 34590927}
   - component: {fileID: 34590926}
-  - component: {fileID: 34590925}
-  - component: {fileID: 34590931}
   - component: {fileID: 34590932}
   - component: {fileID: 34590934}
   - component: {fileID: 34590933}
+  - component: {fileID: 34590927}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -443,27 +441,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &34590925
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 34590924}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a0009d4472c48b5449fd75f4cb0f42f5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rb: {fileID: 0}
-  movespeed: 5
-  dashDirection: {x: 0, y: 0, z: 0}
-  dashSpeed: 15
-  dashTime: 0.1
-  dashRecoilTime: 2
-  holdDashMultiplayer: 1
-  normalDashMultiplayer: 1
-  extraDashesValue: 3
 --- !u!54 &34590926
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -480,8 +457,8 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 80
   m_CollisionDetection: 3
---- !u!65 &34590927
-BoxCollider:
+--- !u!136 &34590927
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -490,9 +467,10 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Radius: 0.5
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.4, z: 0}
 --- !u!23 &34590928
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -558,29 +536,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &34590931
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 34590924}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac32b7a1bbf07d1408cd74bfea70a87e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cam: {fileID: 1619637080}
-  moveSpeed: 20
-  turnTime: 0.1
-  turnVelocity: 0
-  direction: {x: 0, y: 0, z: 0}
-  newDirection: {x: 0, y: 0, z: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  destination: {x: 0, y: 0, z: 0}
-  horizontal: 0
-  vertical: 0
-  E: 0.017320508
 --- !u!114 &34590932
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -594,11 +549,31 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MisslePrefabs0:
-  - {fileID: 1165356956985044036, guid: 292c6e70a98f94141b0a46f28f91cd1a, type: 3}
-  - {fileID: 5698014206745604132, guid: b4282d84807f2464da96bf99c84c61ac, type: 3}
+  - {fileID: 2911792538874348900, guid: a9d6f61a8dcc7754f87d4d5dc99759ef, type: 3}
+  - {fileID: 8859080274034353796, guid: 6299b940463d97047802a04db40e502a, type: 3}
   MisslePrefabs1:
-  - {fileID: 2918864318396781000, guid: 0a6fe852d0962d44894ebd93234ff4b8, type: 3}
-  - {fileID: 5047218982689749017, guid: 080691bbdf2aa4d44878e697d9cb6692, type: 3}
+  - {fileID: 7758064418335870149, guid: c241f71b47c8bee4d98af937abcadf0d, type: 3}
+  - {fileID: 1094502651778049706, guid: c6b6e3426b390bf4ba81b4db20c144bb, type: 3}
+  fireCast: 0
+  waterCast: 0
+  earthCast: 0
+  aerCast: 0
+  darkCast: 0
+  lightCast: 0
+  fireBonus: 0
+  waterBonus: 0
+  earthBonus: 0
+  aerBonus: 0
+  darkBonus: 0
+  lightBonus: 0
+  shootRecoilTime00: 0
+  extraShotsValue00: 1
+  shootRecoilTime10: 0
+  extraShotsValue10: 1
+  shootRecoilTime01: 0
+  extraShotsValue01: 1
+  shootRecoilTime11: 0
+  extraShotsValue11: 1
 --- !u!114 &34590933
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -711,7 +686,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: 01c9cd9324e500747984faba89e35e6b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.5
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: 01c9cd9324e500747984faba89e35e6b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -795,6 +770,12 @@ MonoBehaviour:
   player: {fileID: 34590930}
   distance: 1
   Vision: 0
+  fireAura: 0
+  waterAura: 0
+  earthAura: 0
+  aerAura: 0
+  darkAura: 0
+  lightAura: 1
 --- !u!1 &54945467 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 6f401ab236059514fa92aff73110d248, type: 3}
@@ -836,6 +817,12 @@ MonoBehaviour:
   player: {fileID: 34590930}
   distance: 1
   Vision: 0
+  fireAura: 0
+  waterAura: 0
+  earthAura: 1
+  aerAura: 0
+  darkAura: 0
+  lightAura: 0
 --- !u!1 &55440602 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 51fe39405358d9541a79033d525ed9df, type: 3}
@@ -877,6 +864,12 @@ MonoBehaviour:
   player: {fileID: 34590930}
   distance: 1
   Vision: 0
+  fireAura: 0
+  waterAura: 0
+  earthAura: 0
+  aerAura: 0
+  darkAura: 0
+  lightAura: 1
 --- !u!1 &56379423 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: d33d73f65a06b62488a9b85888bfdeb6, type: 3}
@@ -918,6 +911,12 @@ MonoBehaviour:
   player: {fileID: 34590930}
   distance: 1
   Vision: 0
+  fireAura: 0
+  waterAura: 0
+  earthAura: 0
+  aerAura: 0
+  darkAura: 0
+  lightAura: 0
 --- !u!1001 &64350798
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -983,7 +982,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: 58993711248bc2c4bb9782dfcd217815, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.5
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: 58993711248bc2c4bb9782dfcd217815, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1061,7 +1060,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: 29b33bdfc1c5ca344afb9045bfb473de, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.5
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: 29b33bdfc1c5ca344afb9045bfb473de, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1533,6 +1532,95 @@ MonoBehaviour:
   player: {fileID: 0}
   step: 0
   Vision: 0
+--- !u!1 &137553661
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 137553663}
+  - component: {fileID: 137553662}
+  m_Layer: 0
+  m_Name: GameObject (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &137553662
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 137553661}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c79256b68732ce84eb836b3a9f6e5e71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TilePrefabs:
+  - {fileID: 695866876}
+  - {fileID: 2090545162}
+  - {fileID: 1633770441}
+  - {fileID: 1122963099}
+  - {fileID: 957119211}
+  - {fileID: 1159565908}
+  - {fileID: 1244435060}
+  - {fileID: 242268837}
+  - {fileID: 1488585391}
+  - {fileID: 1830697469}
+  - {fileID: 1795695964}
+  - {fileID: 2049464375}
+  - {fileID: 1829905160}
+  - {fileID: 1897490270}
+  - {fileID: 360819855}
+  - {fileID: 1824834732}
+  - {fileID: 233699333}
+  - {fileID: 185648667}
+  - {fileID: 764633540}
+  - {fileID: 1895748701}
+  - {fileID: 1947219812}
+  - {fileID: 1567409371}
+  - {fileID: 790941375}
+  - {fileID: 1159447862}
+  - {fileID: 1376275405}
+  - {fileID: 2059980203}
+  - {fileID: 1798129098}
+  - {fileID: 239796967}
+  - {fileID: 1324942757}
+  - {fileID: 1043150893}
+  - {fileID: 1635080285}
+  - {fileID: 1615487384}
+  - {fileID: 2065876260}
+  - {fileID: 1426877981}
+  - {fileID: 1083741230}
+  - {fileID: 873147840}
+  MapSize: {x: 10, y: 10}
+  VoxelSize: 0.1
+  TileSideVoxels: 8
+  offsetY: 0
+  offsetX: 0
+  chunkAmountX: -5
+  chunkAmountY: -5
+  chunkNumberX: 0
+  chunkNumberY: 0
+--- !u!4 &137553663
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 137553661}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 14.692933, y: -13.171399, z: 11.692678}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &150002644 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4533420243691722, guid: ffa08167d28cfd24dba0151a4c80f384, type: 3}
@@ -1608,7 +1696,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: 254f686efdafcc348a40f0b588380047, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.5
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: 254f686efdafcc348a40f0b588380047, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1662,6 +1750,12 @@ MonoBehaviour:
   player: {fileID: 34590930}
   distance: 1
   Vision: 0
+  fireAura: 0
+  waterAura: 0
+  earthAura: 0
+  aerAura: 1
+  darkAura: 0
+  lightAura: 0
 --- !u!1 &163370476 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: ad13a68bee1684e40ba5d421a3e34813, type: 3}
@@ -2275,7 +2369,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: 0697862a8ef64d7409228a9606f8bf79, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.5
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: 0697862a8ef64d7409228a9606f8bf79, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2722,7 +2816,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: f5e68aa43e4ca204cacc1d1d38ba8310, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.5
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: f5e68aa43e4ca204cacc1d1d38ba8310, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3121,6 +3215,12 @@ MonoBehaviour:
   player: {fileID: 34590930}
   distance: 1
   Vision: 0
+  fireAura: 1
+  waterAura: 0
+  earthAura: 0
+  aerAura: 0
+  darkAura: 0
+  lightAura: 0
 --- !u!1001 &336919168
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3528,6 +3628,12 @@ MonoBehaviour:
   player: {fileID: 34590930}
   distance: 1
   Vision: 0
+  fireAura: 0
+  waterAura: 0
+  earthAura: 0
+  aerAura: 0
+  darkAura: 0
+  lightAura: 0
 --- !u!1001 &371524415
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3673,6 +3779,12 @@ MonoBehaviour:
   player: {fileID: 34590930}
   distance: 1
   Vision: 0
+  fireAura: 0
+  waterAura: 1
+  earthAura: 0
+  aerAura: 0
+  darkAura: 0
+  lightAura: 0
 --- !u!1001 &390545501
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3831,7 +3943,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: ad568604e7513ef4e88870567bb4ef65, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.5
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: ad568604e7513ef4e88870567bb4ef65, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4392,6 +4504,12 @@ MonoBehaviour:
   player: {fileID: 34590930}
   distance: 1
   Vision: 0
+  fireAura: 0
+  waterAura: 0
+  earthAura: 0
+  aerAura: 0
+  darkAura: 0
+  lightAura: 1
 --- !u!1 &482106958 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 8c1f073976080bd498c9fa62d10330d8, type: 3}
@@ -4433,6 +4551,12 @@ MonoBehaviour:
   player: {fileID: 34590930}
   distance: 1
   Vision: 0
+  fireAura: 0
+  waterAura: 0
+  earthAura: 1
+  aerAura: 0
+  darkAura: 0
+  lightAura: 0
 --- !u!4 &486253684 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4327801177169936, guid: ffa08167d28cfd24dba0151a4c80f384, type: 3}
@@ -4661,6 +4785,95 @@ MonoBehaviour:
   ColorsForward: 
   ColorsLeft: 
   ColorsBack: 
+--- !u!1 &495225359
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 495225361}
+  - component: {fileID: 495225360}
+  m_Layer: 0
+  m_Name: GameObject (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &495225360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 495225359}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe0886264f35c0940aabd50b55e9d893, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TilePrefabs:
+  - {fileID: 695866876}
+  - {fileID: 2090545162}
+  - {fileID: 1633770441}
+  - {fileID: 1122963099}
+  - {fileID: 957119211}
+  - {fileID: 1159565908}
+  - {fileID: 1244435060}
+  - {fileID: 242268837}
+  - {fileID: 1488585391}
+  - {fileID: 1830697469}
+  - {fileID: 1795695964}
+  - {fileID: 2049464375}
+  - {fileID: 1829905160}
+  - {fileID: 1897490270}
+  - {fileID: 360819855}
+  - {fileID: 1824834732}
+  - {fileID: 233699333}
+  - {fileID: 185648667}
+  - {fileID: 764633540}
+  - {fileID: 1895748701}
+  - {fileID: 1947219812}
+  - {fileID: 1567409371}
+  - {fileID: 790941375}
+  - {fileID: 1159447862}
+  - {fileID: 1376275405}
+  - {fileID: 2059980203}
+  - {fileID: 1798129098}
+  - {fileID: 239796967}
+  - {fileID: 1324942757}
+  - {fileID: 1043150893}
+  - {fileID: 1635080285}
+  - {fileID: 1615487384}
+  - {fileID: 2065876260}
+  - {fileID: 1426877981}
+  - {fileID: 1083741230}
+  - {fileID: 873147840}
+  MapSize: {x: 10, y: 10}
+  VoxelSize: 0.1
+  TileSideVoxels: 8
+  offsetY: 0
+  offsetX: 0
+  chunkAmountX: 5
+  chunkAmountY: -5
+  chunkNumberX: 0
+  chunkNumberY: 0
+--- !u!4 &495225361
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 495225359}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 14.692933, y: -13.171399, z: 11.692678}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &496006009
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4726,7 +4939,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: 147fb2a39510c2a449ad5d8d69286890, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.5
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: 147fb2a39510c2a449ad5d8d69286890, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4780,6 +4993,12 @@ MonoBehaviour:
   player: {fileID: 34590930}
   distance: 1
   Vision: 0
+  fireAura: 0
+  waterAura: 0
+  earthAura: 0
+  aerAura: 0
+  darkAura: 0
+  lightAura: 0
 --- !u!1001 &499675994
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5001,6 +5220,12 @@ MonoBehaviour:
   player: {fileID: 34590930}
   distance: 1
   Vision: 0
+  fireAura: 0
+  waterAura: 0
+  earthAura: 0
+  aerAura: 0
+  darkAura: 0
+  lightAura: 0
 --- !u!4 &528858670 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400100, guid: f8eedf20a66822f43ab259af08122812, type: 3}
@@ -5135,6 +5360,12 @@ MonoBehaviour:
   player: {fileID: 34590930}
   distance: 1
   Vision: 0
+  fireAura: 0
+  waterAura: 0
+  earthAura: 0
+  aerAura: 1
+  darkAura: 0
+  lightAura: 0
 --- !u!1001 &564092287
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5200,7 +5431,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: 1e6bc4b315fc9cc4eb66a043cc50425b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.5
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: 1e6bc4b315fc9cc4eb66a043cc50425b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5254,6 +5485,12 @@ MonoBehaviour:
   player: {fileID: 34590930}
   distance: 1
   Vision: 0
+  fireAura: 0
+  waterAura: 0
+  earthAura: 0
+  aerAura: 1
+  darkAura: 0
+  lightAura: 0
 --- !u!198 &566470018 stripped
 ParticleSystem:
   m_CorrespondingSourceObject: {fileID: 205747929563333462, guid: cb3f9e41bb072f246b081c56f55983c5, type: 3}
@@ -5449,6 +5686,12 @@ MonoBehaviour:
   player: {fileID: 34590930}
   distance: 1
   Vision: 0
+  fireAura: 0
+  waterAura: 0
+  earthAura: 0
+  aerAura: 0
+  darkAura: 0
+  lightAura: 0
 --- !u!1001 &594025138
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5633,6 +5876,12 @@ MonoBehaviour:
   player: {fileID: 34590930}
   distance: 1
   Vision: 0
+  fireAura: 0
+  waterAura: 0
+  earthAura: 0
+  aerAura: 0
+  darkAura: 1
+  lightAura: 0
 --- !u!1 &622195953 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 7086d0485af7f5f46a1c96b76c372813, type: 3}
@@ -5674,6 +5923,12 @@ MonoBehaviour:
   player: {fileID: 34590930}
   distance: 1
   Vision: 0
+  fireAura: 0
+  waterAura: 0
+  earthAura: 0
+  aerAura: 0
+  darkAura: 1
+  lightAura: 0
 --- !u!1001 &624237428
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5863,7 +6118,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: 5d658f96b3c445545b0c3b4b9934dc18, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.5
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: 5d658f96b3c445545b0c3b4b9934dc18, type: 3}
       propertyPath: m_LocalPosition.z
@@ -6217,6 +6472,12 @@ MonoBehaviour:
   player: {fileID: 34590930}
   distance: 1
   Vision: 0
+  fireAura: 0
+  waterAura: 0
+  earthAura: 0
+  aerAura: 0
+  darkAura: 0
+  lightAura: 0
 --- !u!1 &684751562 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 9ee92a0818d706b46922e4e3e3411b20, type: 3}
@@ -6258,6 +6519,12 @@ MonoBehaviour:
   player: {fileID: 34590930}
   distance: 1
   Vision: 0
+  fireAura: 0
+  waterAura: 0
+  earthAura: 0
+  aerAura: 0
+  darkAura: 0
+  lightAura: 1
 --- !u!1001 &692093783
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6323,7 +6590,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: d5cbed8f5ed811e4b9abd6a601154cfc, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.5
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: d5cbed8f5ed811e4b9abd6a601154cfc, type: 3}
       propertyPath: m_LocalPosition.z
@@ -6831,6 +7098,12 @@ MonoBehaviour:
   player: {fileID: 34590930}
   distance: 1
   Vision: 0
+  fireAura: 0
+  waterAura: 0
+  earthAura: 0
+  aerAura: 0
+  darkAura: 0
+  lightAura: 0
 --- !u!1001 &731071853
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6973,7 +7246,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: 625726c02bdd2624494a99867745a617, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.5
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: 625726c02bdd2624494a99867745a617, type: 3}
       propertyPath: m_LocalPosition.z
@@ -7399,7 +7672,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: 6f401ab236059514fa92aff73110d248, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.5
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: 6f401ab236059514fa92aff73110d248, type: 3}
       propertyPath: m_LocalPosition.z
@@ -7453,6 +7726,12 @@ MonoBehaviour:
   player: {fileID: 34590930}
   distance: 1
   Vision: 0
+  fireAura: 0
+  waterAura: 0
+  earthAura: 1
+  aerAura: 0
+  darkAura: 0
+  lightAura: 0
 --- !u!4 &779900248 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400040, guid: f8eedf20a66822f43ab259af08122812, type: 3}
@@ -7483,6 +7762,95 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4762719833652020, guid: ffa08167d28cfd24dba0151a4c80f384, type: 3}
   m_PrefabInstance: {fileID: 1595949529}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &789741354
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 789741356}
+  - component: {fileID: 789741355}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &789741355
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 789741354}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8572733dca431aa469f50b2a9af62070, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TilePrefabs:
+  - {fileID: 695866876}
+  - {fileID: 2090545162}
+  - {fileID: 1633770441}
+  - {fileID: 1122963099}
+  - {fileID: 957119211}
+  - {fileID: 1159565908}
+  - {fileID: 1244435060}
+  - {fileID: 242268837}
+  - {fileID: 1488585391}
+  - {fileID: 1830697469}
+  - {fileID: 1795695964}
+  - {fileID: 2049464375}
+  - {fileID: 1829905160}
+  - {fileID: 1897490270}
+  - {fileID: 360819855}
+  - {fileID: 1824834732}
+  - {fileID: 233699333}
+  - {fileID: 185648667}
+  - {fileID: 764633540}
+  - {fileID: 1895748701}
+  - {fileID: 1947219812}
+  - {fileID: 1567409371}
+  - {fileID: 790941375}
+  - {fileID: 1159447862}
+  - {fileID: 1376275405}
+  - {fileID: 2059980203}
+  - {fileID: 1798129098}
+  - {fileID: 239796967}
+  - {fileID: 1324942757}
+  - {fileID: 1043150893}
+  - {fileID: 1635080285}
+  - {fileID: 1615487384}
+  - {fileID: 2065876260}
+  - {fileID: 1426877981}
+  - {fileID: 1083741230}
+  - {fileID: 873147840}
+  MapSize: {x: 10, y: 10}
+  VoxelSize: 0.1
+  TileSideVoxels: 8
+  offsetY: 0
+  offsetX: 0
+  chunkAmountX: -5
+  chunkAmountY: 5
+  chunkNumberX: 0
+  chunkNumberY: 0
+--- !u!4 &789741356
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 789741354}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 14.692933, y: -13.171399, z: 11.692678}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &790941373 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 67c72959843350e41a94464d97a99675, type: 3}
@@ -7559,6 +7927,12 @@ MonoBehaviour:
   player: {fileID: 34590930}
   distance: 1
   Vision: 0
+  fireAura: 0
+  waterAura: 1
+  earthAura: 0
+  aerAura: 0
+  darkAura: 0
+  lightAura: 0
 --- !u!4 &799439601 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400054, guid: f8eedf20a66822f43ab259af08122812, type: 3}
@@ -7669,7 +8043,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: e0e3401bf1630a04d9ee5608af23eff9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.5
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: e0e3401bf1630a04d9ee5608af23eff9, type: 3}
       propertyPath: m_LocalPosition.z
@@ -7723,6 +8097,12 @@ MonoBehaviour:
   player: {fileID: 34590930}
   distance: 1
   Vision: 0
+  fireAura: 1
+  waterAura: 0
+  earthAura: 0
+  aerAura: 0
+  darkAura: 0
+  lightAura: 0
 --- !u!1001 &813254096
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7921,7 +8301,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: 5bb10c1b84ca420459cf81aa4c9705eb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.5
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: 5bb10c1b84ca420459cf81aa4c9705eb, type: 3}
       propertyPath: m_LocalPosition.z
@@ -8217,7 +8597,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: e1affd5f66976c34da4f81029fe67281, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.5
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: e1affd5f66976c34da4f81029fe67281, type: 3}
       propertyPath: m_LocalPosition.z
@@ -8276,6 +8656,12 @@ MonoBehaviour:
   player: {fileID: 34590930}
   distance: 1
   Vision: 0
+  fireAura: 0
+  waterAura: 1
+  earthAura: 0
+  aerAura: 0
+  darkAura: 0
+  lightAura: 0
 --- !u!1 &863934190 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8164078558771037576, guid: 729a3beb27bfba84c884d122770e1a8c, type: 3}
@@ -8357,6 +8743,12 @@ MonoBehaviour:
   player: {fileID: 34590930}
   distance: 1
   Vision: 0
+  fireAura: 0
+  waterAura: 0
+  earthAura: 0
+  aerAura: 0
+  darkAura: 0
+  lightAura: 0
 --- !u!1 &873147838 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: b107db51fd1555240a04bbad2db8f366, type: 3}
@@ -8453,6 +8845,12 @@ MonoBehaviour:
   player: {fileID: 34590930}
   distance: 1
   Vision: 0
+  fireAura: 1
+  waterAura: 0
+  earthAura: 0
+  aerAura: 0
+  darkAura: 0
+  lightAura: 0
 --- !u!1 &892401408 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 29b33bdfc1c5ca344afb9045bfb473de, type: 3}
@@ -8494,6 +8892,12 @@ MonoBehaviour:
   player: {fileID: 34590930}
   distance: 1
   Vision: 0
+  fireAura: 0
+  waterAura: 0
+  earthAura: 0
+  aerAura: 0
+  darkAura: 0
+  lightAura: 1
 --- !u!4 &898396006 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400114, guid: f8eedf20a66822f43ab259af08122812, type: 3}
@@ -8667,7 +9071,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: 4ef2e2c7f8cc4a0429025d6d77e01cd1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.5
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: 4ef2e2c7f8cc4a0429025d6d77e01cd1, type: 3}
       propertyPath: m_LocalPosition.z
@@ -8799,6 +9203,12 @@ MonoBehaviour:
   player: {fileID: 34590930}
   distance: 1
   Vision: 0
+  fireAura: 0
+  waterAura: 0
+  earthAura: 0
+  aerAura: 0
+  darkAura: 1
+  lightAura: 0
 --- !u!198 &926780724 stripped
 ParticleSystem:
   m_CorrespondingSourceObject: {fileID: 2607801938061789161, guid: 1cea57273683fb746b73da0b3fcf4637, type: 3}
@@ -8865,6 +9275,12 @@ MonoBehaviour:
   player: {fileID: 34590930}
   distance: 1
   Vision: 0
+  fireAura: 0
+  waterAura: 0
+  earthAura: 0
+  aerAura: 1
+  darkAura: 0
+  lightAura: 0
 --- !u!1001 &942644802
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10197,31 +10613,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400064, guid: f8eedf20a66822f43ab259af08122812, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9918797
+      value: 0.9207432
       objectReference: {fileID: 0}
     - target: {fileID: 400064, guid: f8eedf20a66822f43ab259af08122812, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.04645279
+      value: 0.05062337
       objectReference: {fileID: 0}
     - target: {fileID: 400064, guid: f8eedf20a66822f43ab259af08122812, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.11640311
+      value: -0.38679054
       objectReference: {fileID: 0}
     - target: {fileID: 400064, guid: f8eedf20a66822f43ab259af08122812, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.021612668
+      value: 0.007888997
       objectReference: {fileID: 0}
     - target: {fileID: 400064, guid: f8eedf20a66822f43ab259af08122812, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
+      value: 5.7
       objectReference: {fileID: 0}
     - target: {fileID: 400064, guid: f8eedf20a66822f43ab259af08122812, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: -45.644
       objectReference: {fileID: 0}
     - target: {fileID: 400064, guid: f8eedf20a66822f43ab259af08122812, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
+      value: -1.419
       objectReference: {fileID: 0}
     - target: {fileID: 400068, guid: f8eedf20a66822f43ab259af08122812, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11990,6 +12406,12 @@ MonoBehaviour:
   player: {fileID: 34590930}
   distance: 1
   Vision: 0
+  fireAura: 0
+  waterAura: 0
+  earthAura: 0
+  aerAura: 0
+  darkAura: 0
+  lightAura: 1
 --- !u!1001 &1022328968
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12148,7 +12570,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: 9ce97d1b10fd5ec479262ea3478214c0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.5
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: 9ce97d1b10fd5ec479262ea3478214c0, type: 3}
       propertyPath: m_LocalPosition.z
@@ -12362,7 +12784,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: 8c1f073976080bd498c9fa62d10330d8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.5
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: 8c1f073976080bd498c9fa62d10330d8, type: 3}
       propertyPath: m_LocalPosition.z
@@ -12431,6 +12853,12 @@ MonoBehaviour:
   player: {fileID: 34590930}
   distance: 1
   Vision: 0
+  fireAura: 0
+  waterAura: 0
+  earthAura: 1
+  aerAura: 0
+  darkAura: 0
+  lightAura: 0
 --- !u!1001 &1082325039
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12826,7 +13254,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: 858a5f220fb228d4d9626fc74c2e1bfe, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.5
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: 858a5f220fb228d4d9626fc74c2e1bfe, type: 3}
       propertyPath: m_LocalPosition.z
@@ -12900,6 +13328,12 @@ MonoBehaviour:
   player: {fileID: 34590930}
   distance: 1
   Vision: 0
+  fireAura: 0
+  waterAura: 0
+  earthAura: 1
+  aerAura: 0
+  darkAura: 0
+  lightAura: 0
 --- !u!198 &1138612851 stripped
 ParticleSystem:
   m_CorrespondingSourceObject: {fileID: 2607801938061789161, guid: 1cea57273683fb746b73da0b3fcf4637, type: 3}
@@ -12970,7 +13404,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: 8f6d3977e5f397349a1717856c6dc7fa, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.5
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: 8f6d3977e5f397349a1717856c6dc7fa, type: 3}
       propertyPath: m_LocalPosition.z
@@ -13024,6 +13458,12 @@ MonoBehaviour:
   player: {fileID: 34590930}
   distance: 1
   Vision: 0
+  fireAura: 1
+  waterAura: 0
+  earthAura: 0
+  aerAura: 0
+  darkAura: 0
+  lightAura: 0
 --- !u!4 &1158589396 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400032, guid: f8eedf20a66822f43ab259af08122812, type: 3}
@@ -13336,6 +13776,12 @@ MonoBehaviour:
   player: {fileID: 34590930}
   distance: 1
   Vision: 0
+  fireAura: 0
+  waterAura: 0
+  earthAura: 0
+  aerAura: 0
+  darkAura: 1
+  lightAura: 0
 --- !u!4 &1198207106 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400082, guid: f8eedf20a66822f43ab259af08122812, type: 3}
@@ -13657,7 +14103,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: bf26da6df7a9e1540856ddd0a20fe925, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.5
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: bf26da6df7a9e1540856ddd0a20fe925, type: 3}
       propertyPath: m_LocalPosition.z
@@ -13726,6 +14172,12 @@ MonoBehaviour:
   player: {fileID: 34590930}
   distance: 1
   Vision: 0
+  fireAura: 0
+  waterAura: 0
+  earthAura: 0
+  aerAura: 0
+  darkAura: 1
+  lightAura: 0
 --- !u!1 &1268713195 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8164078558771037576, guid: 9b134bbdadd1e8049af3ea8043c33ba5, type: 3}
@@ -13924,7 +14376,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: 9e9aa7e7ddc8419418296bad692efb23, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.5
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: 9e9aa7e7ddc8419418296bad692efb23, type: 3}
       propertyPath: m_LocalPosition.z
@@ -14231,7 +14683,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: 7086d0485af7f5f46a1c96b76c372813, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.5
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: 7086d0485af7f5f46a1c96b76c372813, type: 3}
       propertyPath: m_LocalPosition.z
@@ -14386,7 +14838,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: 2b723f231e2234d4d95b5349edc83fae, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.5
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: 2b723f231e2234d4d95b5349edc83fae, type: 3}
       propertyPath: m_LocalPosition.z
@@ -14494,7 +14946,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: 70d86808325275b4dbe821e6d2d26d19, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.5
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: 70d86808325275b4dbe821e6d2d26d19, type: 3}
       propertyPath: m_LocalPosition.z
@@ -14973,6 +15425,12 @@ MonoBehaviour:
   player: {fileID: 34590930}
   distance: 1
   Vision: 0
+  fireAura: 0
+  waterAura: 0
+  earthAura: 0
+  aerAura: 0
+  darkAura: 0
+  lightAura: 0
 --- !u!1001 &1353902741
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15038,7 +15496,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: 48880eda01d1c0d4f8d394b7fc3bd728, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.5
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: 48880eda01d1c0d4f8d394b7fc3bd728, type: 3}
       propertyPath: m_LocalPosition.z
@@ -15304,7 +15762,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: d33d73f65a06b62488a9b85888bfdeb6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.5
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: d33d73f65a06b62488a9b85888bfdeb6, type: 3}
       propertyPath: m_LocalPosition.z
@@ -15772,6 +16230,12 @@ MonoBehaviour:
   player: {fileID: 34590930}
   distance: 1
   Vision: 0
+  fireAura: 0
+  waterAura: 0
+  earthAura: 0
+  aerAura: 0
+  darkAura: 0
+  lightAura: 0
 --- !u!4 &1457386877 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400080, guid: f8eedf20a66822f43ab259af08122812, type: 3}
@@ -15823,6 +16287,12 @@ MonoBehaviour:
   player: {fileID: 34590930}
   distance: 1
   Vision: 0
+  fireAura: 0
+  waterAura: 0
+  earthAura: 0
+  aerAura: 1
+  darkAura: 0
+  lightAura: 0
 --- !u!4 &1465649091 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400058, guid: f8eedf20a66822f43ab259af08122812, type: 3}
@@ -15893,7 +16363,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: bb7fddc33ed0c0549a8772e8c5cdf27e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.5
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: bb7fddc33ed0c0549a8772e8c5cdf27e, type: 3}
       propertyPath: m_LocalPosition.z
@@ -15971,7 +16441,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: dca5d3d2fa2b4a24aaac2fa2bbc51e69, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.5
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: dca5d3d2fa2b4a24aaac2fa2bbc51e69, type: 3}
       propertyPath: m_LocalPosition.z
@@ -16353,7 +16823,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: 9e31847b9c68ba54f98d7e28ec76e58b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.5
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: 9e31847b9c68ba54f98d7e28ec76e58b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -16573,7 +17043,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: ccec86f6d6cb59148b535387df4230b3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.5
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: ccec86f6d6cb59148b535387df4230b3, type: 3}
       propertyPath: m_LocalPosition.z
@@ -16657,6 +17127,12 @@ MonoBehaviour:
   player: {fileID: 34590930}
   distance: 1
   Vision: 0
+  fireAura: 0
+  waterAura: 1
+  earthAura: 0
+  aerAura: 0
+  darkAura: 0
+  lightAura: 0
 --- !u!4 &1542988627 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4914397927010356, guid: ffa08167d28cfd24dba0151a4c80f384, type: 3}
@@ -16732,7 +17208,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: 9ee92a0818d706b46922e4e3e3411b20, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.5
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: 9ee92a0818d706b46922e4e3e3411b20, type: 3}
       propertyPath: m_LocalPosition.z
@@ -16810,7 +17286,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: 1b123bf9a22b59a49bf9d9f872ff2227, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.5
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: 1b123bf9a22b59a49bf9d9f872ff2227, type: 3}
       propertyPath: m_LocalPosition.z
@@ -16919,6 +17395,12 @@ MonoBehaviour:
   player: {fileID: 34590930}
   distance: 1
   Vision: 0
+  fireAura: 1
+  waterAura: 0
+  earthAura: 0
+  aerAura: 0
+  darkAura: 0
+  lightAura: 0
 --- !u!1 &1568162405 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8164078558771037576, guid: 9d2e8eaee73195249b8867372e52f556, type: 3}
@@ -17079,6 +17561,12 @@ MonoBehaviour:
   player: {fileID: 34590930}
   distance: 1
   Vision: 0
+  fireAura: 0
+  waterAura: 0
+  earthAura: 0
+  aerAura: 0
+  darkAura: 1
+  lightAura: 0
 --- !u!1001 &1574734011
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17144,7 +17632,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: 150f5ed0427dead4bb0ceebdfdd3d0f2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.5
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: 150f5ed0427dead4bb0ceebdfdd3d0f2, type: 3}
       propertyPath: m_LocalPosition.z
@@ -17763,15 +18251,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4454075218006858, guid: ffa08167d28cfd24dba0151a4c80f384, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 0.009
       objectReference: {fileID: 0}
     - target: {fileID: 4454075218006858, guid: ffa08167d28cfd24dba0151a4c80f384, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.882
       objectReference: {fileID: 0}
     - target: {fileID: 4454075218006858, guid: ffa08167d28cfd24dba0151a4c80f384, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 0.006
       objectReference: {fileID: 0}
     - target: {fileID: 4468221465858376, guid: ffa08167d28cfd24dba0151a4c80f384, type: 3}
       propertyPath: m_LocalRotation.w
@@ -18535,7 +19023,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: c6d78b041ac97b84b96022e217f06e04, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.5
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: c6d78b041ac97b84b96022e217f06e04, type: 3}
       propertyPath: m_LocalPosition.z
@@ -19052,7 +19540,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: a1844278ac874df48bb320eb456f1aac, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.5
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: a1844278ac874df48bb320eb456f1aac, type: 3}
       propertyPath: m_LocalPosition.z
@@ -19466,7 +19954,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: 69824c53c573316419697b9781f49c04, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.5
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: 69824c53c573316419697b9781f49c04, type: 3}
       propertyPath: m_LocalPosition.z
@@ -19520,6 +20008,12 @@ MonoBehaviour:
   player: {fileID: 34590930}
   distance: 1
   Vision: 0
+  fireAura: 0
+  waterAura: 0
+  earthAura: 0
+  aerAura: 1
+  darkAura: 0
+  lightAura: 0
 --- !u!198 &1731226664 stripped
 ParticleSystem:
   m_CorrespondingSourceObject: {fileID: 6303066543938823300, guid: 5a409ae67e0006a4f919d6f546c784c7, type: 3}
@@ -19590,7 +20084,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: ed1f1a36566c64348847ef527bf9f8b7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.5
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: ed1f1a36566c64348847ef527bf9f8b7, type: 3}
       propertyPath: m_LocalPosition.z
@@ -19701,6 +20195,12 @@ MonoBehaviour:
   player: {fileID: 34590930}
   distance: 1
   Vision: 0
+  fireAura: 1
+  waterAura: 0
+  earthAura: 0
+  aerAura: 0
+  darkAura: 0
+  lightAura: 0
 --- !u!1 &1762368463 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 9b38a6f7a6c1ca3458867813596880cb, type: 3}
@@ -19742,6 +20242,12 @@ MonoBehaviour:
   player: {fileID: 34590930}
   distance: 1
   Vision: 0
+  fireAura: 0
+  waterAura: 0
+  earthAura: 0
+  aerAura: 0
+  darkAura: 0
+  lightAura: 0
 --- !u!1001 &1763229183
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19807,7 +20313,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: 0e764746bb402e44a9ae9d8b885f66c9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.5
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: 0e764746bb402e44a9ae9d8b885f66c9, type: 3}
       propertyPath: m_LocalPosition.z
@@ -20574,7 +21080,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: 2b00d33b1f5402d48ae6d6c386db5595, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.5
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: 2b00d33b1f5402d48ae6d6c386db5595, type: 3}
       propertyPath: m_LocalPosition.z
@@ -20751,7 +21257,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: 9b38a6f7a6c1ca3458867813596880cb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.5
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: 9b38a6f7a6c1ca3458867813596880cb, type: 3}
       propertyPath: m_LocalPosition.z
@@ -20829,7 +21335,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: b988feba3e88e1d4e8f68aee774e0d24, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.5
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: b988feba3e88e1d4e8f68aee774e0d24, type: 3}
       propertyPath: m_LocalPosition.z
@@ -21237,7 +21743,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: 217b9f3d4343d0b4b93a4504b8b9787a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.5
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: 217b9f3d4343d0b4b93a4504b8b9787a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -21434,7 +21940,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: 636b0dcffb26be245913e0c40eb36e88, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.5
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: 636b0dcffb26be245913e0c40eb36e88, type: 3}
       propertyPath: m_LocalPosition.z
@@ -21654,7 +22160,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: cd649bd1794f06144a7541970bc0944f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.5
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: cd649bd1794f06144a7541970bc0944f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -21918,6 +22424,12 @@ MonoBehaviour:
   player: {fileID: 34590930}
   distance: 1
   Vision: 0
+  fireAura: 0
+  waterAura: 1
+  earthAura: 0
+  aerAura: 0
+  darkAura: 0
+  lightAura: 0
 --- !u!4 &1924041917 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4311571949522374, guid: ffa08167d28cfd24dba0151a4c80f384, type: 3}
@@ -22004,6 +22516,12 @@ MonoBehaviour:
   player: {fileID: 34590930}
   distance: 1
   Vision: 0
+  fireAura: 1
+  waterAura: 0
+  earthAura: 0
+  aerAura: 0
+  darkAura: 0
+  lightAura: 0
 --- !u!4 &1965104899 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400056, guid: f8eedf20a66822f43ab259af08122812, type: 3}
@@ -22156,7 +22674,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: 9dff069ab1178fd489a7dd93f402222b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.5
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: 9dff069ab1178fd489a7dd93f402222b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -22607,7 +23125,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: 795bb91e4b1c7f64ea524ede2ddea793, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.5
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: 795bb91e4b1c7f64ea524ede2ddea793, type: 3}
       propertyPath: m_LocalPosition.z
@@ -22883,7 +23401,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2027875694}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5218f95810b84264d9559adb82277360, type: 3}
   m_Name: 
@@ -22940,7 +23458,7 @@ MonoBehaviour:
   - {fileID: 558216930}
   - {fileID: 921149527}
   - {fileID: 56379424}
-  MapSize: {x: 25, y: 25}
+  MapSize: {x: 20, y: 20}
   VoxelSize: 0.1
   TileSideVoxels: 8
 --- !u!4 &2027875696
@@ -22964,7 +23482,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2027875694}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7f661eeb3694fa543a04db4307af3626, type: 3}
   m_Name: 
@@ -23006,9 +23524,15 @@ MonoBehaviour:
   - {fileID: 1426877981}
   - {fileID: 1083741230}
   - {fileID: 873147840}
-  MapSize: {x: 25, y: 25}
+  MapSize: {x: 10, y: 10}
   VoxelSize: 0.1
   TileSideVoxels: 8
+  offsetY: 0
+  offsetX: 0
+  chunkAmountX: 2
+  chunkAmountY: 2
+  chunkNumberX: 0
+  chunkNumberY: 0
 --- !u!1001 &2037967082
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23074,7 +23598,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: 64aa1dab6e3ab5248a1301e0cc79a469, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.5
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: 64aa1dab6e3ab5248a1301e0cc79a469, type: 3}
       propertyPath: m_LocalPosition.z
@@ -23845,7 +24369,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: 1c780167653cd07419e54df7521d9458, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.5
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: 1c780167653cd07419e54df7521d9458, type: 3}
       propertyPath: m_LocalPosition.z
@@ -24003,6 +24527,12 @@ MonoBehaviour:
   player: {fileID: 34590930}
   distance: 1
   Vision: 0
+  fireAura: 0
+  waterAura: 0
+  earthAura: 1
+  aerAura: 0
+  darkAura: 0
+  lightAura: 0
 --- !u!1 &2108912814 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8164078558771037576, guid: 7e92ce6358fb7de4e8e24011b6de4239, type: 3}
@@ -24231,6 +24761,12 @@ MonoBehaviour:
   player: {fileID: 34590930}
   distance: 1
   Vision: 0
+  fireAura: 0
+  waterAura: 1
+  earthAura: 0
+  aerAura: 0
+  darkAura: 0
+  lightAura: 0
 --- !u!1001 &2133468310
 PrefabInstance:
   m_ObjectHideFlags: 0
