@@ -85,6 +85,7 @@
     <Compile Include="Assets\Scripts\Map\MapGeneratorScript.cs" />
     <Compile Include="Assets\Scripts\Map\Particles.cs" />
     <Compile Include="Assets\Scripts\Camera\CameraMovement.cs" />
+    <Compile Include="Assets\Scripts\Item.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\FSP\MAST\updates.txt" />
