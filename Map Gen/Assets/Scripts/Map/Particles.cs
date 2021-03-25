@@ -22,10 +22,11 @@ public class Particles : MonoBehaviour
     public bool darkAura;
     public bool lightAura;
 
-
+    private bool doubleCharge;
 
     void Start()
     {
+        doubleCharge = true;
         distance = 3;
         Vision = false;
         if (!doubleAura)
@@ -44,22 +45,55 @@ public class Particles : MonoBehaviour
 
         if (Vision)
         {
+
+            
+            if (doubleAura)
+                if(doubleCharge)
+                    if (Vector3.Distance(gameObject.transform.position, player.position) <= distance)
+                    {
+                        
+                        Aura.Play();
+                    }
+                if (!doubleCharge&& !AuraX2.isPlaying)
+                    if (Vector3.Distance(gameObject.transform.position, player.position) <= distance)
+                    {
+                        
+                        AuraX2.Play();
+                    }
+
+
             if (!Aura.isPlaying)
             {
                 if (Vector3.Distance(gameObject.transform.position, player.position) <= distance)
                 {
-                    if (!AuraX2.isPlaying)
+                    if (doubleAura)
+                        if (doubleCharge)
+                            Aura.Play();
+                    if (doubleAura)
+                        if (!doubleCharge && !AuraX2.isPlaying)
+                            AuraX2.Play();
+                    if (!doubleAura)
                         Aura.Play();
+
                 }
                 
             }
 
+
             if (Aura.isPlaying)
                 if (Vector3.Distance(gameObject.transform.position, player.position) > distance)
                     Aura.Stop();
+            if (doubleAura)
+                if (AuraX2.isPlaying)
+                    if (Vector3.Distance(gameObject.transform.position, player.position) > distance)
+                        AuraX2.Stop();
+
         }
         if (!Vision)
             Aura.Stop();
+        if (doubleAura)
+            if (!Vision)
+                AuraX2.Stop();
 
         if (Vector3.Distance(gameObject.transform.position, player.position) <= distance)
         {
@@ -67,15 +101,16 @@ public class Particles : MonoBehaviour
             {
                 GameObject.FindGameObjectWithTag("Player").GetComponent<Shooting>().fireBonus = true;
                 if (doubleAura)
-                    if (AuraX2.isPlaying)
+                    if (!doubleCharge)
                         Destroy(gameObject);
-                    if (!AuraX2.isPlaying)
-                    {
-                        Aura.Stop();
-                        AuraX2.Play();
-                    }
-                    
-                else
+                if (doubleCharge)
+                {
+                    Aura.Stop();
+                    AuraX2.Play();
+                    doubleCharge = false;
+                }
+
+                if (!doubleAura)
                     Destroy(gameObject);
 
             }
@@ -84,32 +119,34 @@ public class Particles : MonoBehaviour
                 GameObject.FindGameObjectWithTag("Player").GetComponent<Shooting>().waterBonus = true;
 
                 if (doubleAura)
-                    if (AuraX2.isPlaying)
+                    if (!doubleCharge)
                         Destroy(gameObject);
-                    if (!AuraX2.isPlaying)
-                    {
-                        Aura.Stop();
-                        AuraX2.Play();
-                    }
-                    
-                else
+                if (doubleCharge)
+                {
+                    Aura.Stop();
+                    AuraX2.Play();
+                    doubleCharge = false;
+                }
+
+                if (!doubleAura)
                     Destroy(gameObject);
 
-                
+
             }
             if (GameObject.FindGameObjectWithTag("Player").GetComponent<Shooting>().earthCast == true && earthAura == true && GameObject.FindGameObjectWithTag("Player").GetComponent<Shooting>().earthBonus != true)
             {
                 GameObject.FindGameObjectWithTag("Player").GetComponent<Shooting>().earthBonus = true;
                 if (doubleAura)
-                    if (AuraX2.isPlaying)
+                    if (!doubleCharge)
                         Destroy(gameObject);
-                    if (!AuraX2.isPlaying)
-                    {
-                        Aura.Stop();
-                        AuraX2.Play();
-                    }
-                    
-                else
+                if (doubleCharge)
+                {
+                    Aura.Stop();
+                    AuraX2.Play();
+                    doubleCharge = false;
+                }
+
+                if (!doubleAura)
                     Destroy(gameObject);
 
             }
@@ -117,16 +154,16 @@ public class Particles : MonoBehaviour
             {
                 GameObject.FindGameObjectWithTag("Player").GetComponent<Shooting>().aerBonus = true;
                 if (doubleAura)
-                    if (AuraX2.isPlaying)
+                    if (!doubleCharge)
                         Destroy(gameObject);
+                if (doubleCharge)
+                {
+                    Aura.Stop();
+                    AuraX2.Play();
+                    doubleCharge = false;
+                }
 
-                    if (!AuraX2.isPlaying)
-                    {
-                        Aura.Stop();
-                        AuraX2.Play();
-                    }
-                    
-                else
+                if (!doubleAura)
                     Destroy(gameObject);
 
 
@@ -135,15 +172,16 @@ public class Particles : MonoBehaviour
             {
                 GameObject.FindGameObjectWithTag("Player").GetComponent<Shooting>().darkBonus = true;
                 if (doubleAura)
-                    if (AuraX2.isPlaying)
+                    if (!doubleCharge)
                         Destroy(gameObject);
-                    if (!AuraX2.isPlaying)
-                    {
-                        Aura.Stop();
-                        AuraX2.Play();
-                    }
-                    
-                else
+                if (doubleCharge)
+                {
+                    Aura.Stop();
+                    AuraX2.Play();
+                    doubleCharge = false;
+                }
+
+                if (!doubleAura)
                     Destroy(gameObject);
 
             }
@@ -151,15 +189,16 @@ public class Particles : MonoBehaviour
             {
                 GameObject.FindGameObjectWithTag("Player").GetComponent<Shooting>().lightBonus = true;
                 if (doubleAura)
-                    if (AuraX2.isPlaying)
+                    if (!doubleCharge)
                         Destroy(gameObject);
-                    if (!AuraX2.isPlaying)
-                    {
-                        Aura.Stop();
-                        AuraX2.Play();
-                    }
-                    
-                else
+                if (doubleCharge)
+                {
+                    Aura.Stop();
+                    AuraX2.Play();
+                    doubleCharge = false;
+                }
+
+                if (!doubleAura)
                     Destroy(gameObject);
             }
 
