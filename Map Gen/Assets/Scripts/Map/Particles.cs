@@ -5,6 +5,9 @@ using UnityEngine;
 public class Particles : MonoBehaviour
 {
     public ParticleSystem Aura;
+    public ParticleSystem AuraX2;
+
+    public bool doubleAura;
 
     public Transform player;
 
@@ -25,6 +28,10 @@ public class Particles : MonoBehaviour
     {
         distance = 3;
         Vision = false;
+        if (!doubleAura)
+        {
+            AuraX2 = Aura;
+        }
     }
 
 
@@ -41,7 +48,8 @@ public class Particles : MonoBehaviour
             {
                 if (Vector3.Distance(gameObject.transform.position, player.position) <= distance)
                 {
-                    Aura.Play();
+                    if (!AuraX2.isPlaying)
+                        Aura.Play();
                 }
                 
             }
@@ -58,32 +66,101 @@ public class Particles : MonoBehaviour
             if (GameObject.FindGameObjectWithTag("Player").GetComponent<Shooting>().fireCast == true && fireAura == true && GameObject.FindGameObjectWithTag("Player").GetComponent<Shooting>().fireBonus !=true)
             {
                 GameObject.FindGameObjectWithTag("Player").GetComponent<Shooting>().fireBonus = true;
-                Destroy(gameObject);
+                if (doubleAura)
+                    if (AuraX2.isPlaying)
+                        Destroy(gameObject);
+                    if (!AuraX2.isPlaying)
+                    {
+                        Aura.Stop();
+                        AuraX2.Play();
+                    }
+                    
+                else
+                    Destroy(gameObject);
+
             }
             if (GameObject.FindGameObjectWithTag("Player").GetComponent<Shooting>().waterCast == true && waterAura == true && GameObject.FindGameObjectWithTag("Player").GetComponent<Shooting>().waterBonus != true)
             {
                 GameObject.FindGameObjectWithTag("Player").GetComponent<Shooting>().waterBonus = true;
-                Destroy(gameObject);
+
+                if (doubleAura)
+                    if (AuraX2.isPlaying)
+                        Destroy(gameObject);
+                    if (!AuraX2.isPlaying)
+                    {
+                        Aura.Stop();
+                        AuraX2.Play();
+                    }
+                    
+                else
+                    Destroy(gameObject);
+
+                
             }
             if (GameObject.FindGameObjectWithTag("Player").GetComponent<Shooting>().earthCast == true && earthAura == true && GameObject.FindGameObjectWithTag("Player").GetComponent<Shooting>().earthBonus != true)
             {
                 GameObject.FindGameObjectWithTag("Player").GetComponent<Shooting>().earthBonus = true;
-                Destroy(gameObject);
+                if (doubleAura)
+                    if (AuraX2.isPlaying)
+                        Destroy(gameObject);
+                    if (!AuraX2.isPlaying)
+                    {
+                        Aura.Stop();
+                        AuraX2.Play();
+                    }
+                    
+                else
+                    Destroy(gameObject);
+
             }
             if (GameObject.FindGameObjectWithTag("Player").GetComponent<Shooting>().aerCast == true && aerAura == true && GameObject.FindGameObjectWithTag("Player").GetComponent<Shooting>().aerBonus != true)
             {
                 GameObject.FindGameObjectWithTag("Player").GetComponent<Shooting>().aerBonus = true;
-                Destroy(gameObject);
+                if (doubleAura)
+                    if (AuraX2.isPlaying)
+                        Destroy(gameObject);
+
+                    if (!AuraX2.isPlaying)
+                    {
+                        Aura.Stop();
+                        AuraX2.Play();
+                    }
+                    
+                else
+                    Destroy(gameObject);
+
+
             }
             if (GameObject.FindGameObjectWithTag("Player").GetComponent<Shooting>().darkCast == true && darkAura == true && GameObject.FindGameObjectWithTag("Player").GetComponent<Shooting>().darkBonus != true)
             {
                 GameObject.FindGameObjectWithTag("Player").GetComponent<Shooting>().darkBonus = true;
-                Destroy(gameObject);
+                if (doubleAura)
+                    if (AuraX2.isPlaying)
+                        Destroy(gameObject);
+                    if (!AuraX2.isPlaying)
+                    {
+                        Aura.Stop();
+                        AuraX2.Play();
+                    }
+                    
+                else
+                    Destroy(gameObject);
+
             }
             if (GameObject.FindGameObjectWithTag("Player").GetComponent<Shooting>().lightCast == true && lightAura == true && GameObject.FindGameObjectWithTag("Player").GetComponent<Shooting>().lightBonus != true)
             {
                 GameObject.FindGameObjectWithTag("Player").GetComponent<Shooting>().lightBonus = true;
-                Destroy(gameObject);
+                if (doubleAura)
+                    if (AuraX2.isPlaying)
+                        Destroy(gameObject);
+                    if (!AuraX2.isPlaying)
+                    {
+                        Aura.Stop();
+                        AuraX2.Play();
+                    }
+                    
+                else
+                    Destroy(gameObject);
             }
 
 

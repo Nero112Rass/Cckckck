@@ -96,7 +96,7 @@ public class Shooting : MonoBehaviour
     void Update()
     {
 
-        if (extraShots00>0)
+        if (extraShots00>0 && MisslePrefabs0[0].materiaCost<= GameObject.Find("MateriaBar").GetComponent<Bar>().barValue)
         {
             extraShots00--;
 
@@ -121,7 +121,10 @@ public class Shooting : MonoBehaviour
 
                 Instantiate(MisslePrefabs0[0], transform.position + new Vector3(-1 / 2, -1, 1 / 2), Quaternion.identity);
 
-
+                if (MisslePrefabs0[0].materiaCost !=0)
+                {
+                    GameObject.Find("MateriaBar").GetComponent<Bar>().barValue -= MisslePrefabs0[0].materiaCost;
+                }
 
 
 
@@ -133,7 +136,7 @@ public class Shooting : MonoBehaviour
             
         }
 
-        if (extraShots01 > 0)
+        if (extraShots01 > 0 && MisslePrefabs0[1].materiaCost <= GameObject.Find("MateriaBar").GetComponent<Bar>().barValue)
         {
             extraShots01--;
 
@@ -157,12 +160,17 @@ public class Shooting : MonoBehaviour
                 Instantiate(MisslePrefabs0[1], transform.position + new Vector3(-1 / 2, -1, 1 / 2), Quaternion.identity);
 
 
+                if (MisslePrefabs0[1].materiaCost != 0)
+                {
+                    GameObject.Find("MateriaBar").GetComponent<Bar>().barValue -= MisslePrefabs0[1].materiaCost;
+                }
+
             }
 
             
 
         }
-        if (extraShots10 > 0)
+        if (extraShots10 > 0 && MisslePrefabs1[0].materiaCost <= GameObject.Find("MateriaBar").GetComponent<Bar>().barValue)
         {
             extraShots10--;
 
@@ -184,12 +192,18 @@ public class Shooting : MonoBehaviour
 
                 Instantiate(MisslePrefabs1[0], transform.position + new Vector3(1 / 2, -1, -1 / 2), Quaternion.identity);
 
+                
+
+                if (MisslePrefabs1[0].materiaCost != 0)
+                {
+                    GameObject.Find("MateriaBar").GetComponent<Bar>().barValue -= MisslePrefabs1[0].materiaCost;
+                }
             }
 
 
         }
 
-        if (extraShots11>0)
+        if (extraShots11>0 && MisslePrefabs1[1].materiaCost <= GameObject.Find("MateriaBar").GetComponent<Bar>().barValue)
         {
             extraShots11--;
 
@@ -212,6 +226,12 @@ public class Shooting : MonoBehaviour
 
                 Instantiate(MisslePrefabs1[1], transform.position + new Vector3(1 / 2, -1, -1 / 2), Quaternion.identity);
 
+
+                
+                if (MisslePrefabs1[1].materiaCost != 0)
+                {
+                    GameObject.Find("MateriaBar").GetComponent<Bar>().barValue -= MisslePrefabs1[1].materiaCost;
+                }
             }
 
         }

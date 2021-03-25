@@ -2,11 +2,13 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
 using System.Linq;
 
 public class Missles1 : MonoBehaviour
 {
+
+
+
     Color DeltaColor;
 
     public Vector3 target;
@@ -42,7 +44,9 @@ public class Missles1 : MonoBehaviour
 
     public float cooldown;
 
-    public bool burst;
+    public bool drainer;
+
+    public float materiaCost;
 
     void Start()
     {
@@ -138,7 +142,7 @@ public class Missles1 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (burst)
+        if (drainer)
         {
             if (GameObject.FindGameObjectWithTag("Player").GetComponent<Shooting>().fireCast == true && fireMana == true)
             {
@@ -222,7 +226,8 @@ public class Missles1 : MonoBehaviour
 
         if (empowered)
         {
-            transform.localScale = transform.localScale * 2;
+            Aura.transform.localScale = Aura.transform.localScale * 3/2;
+            //transform.localScale = transform.localScale * 2;//
             empowered = false;
         }
 
@@ -232,7 +237,10 @@ public class Missles1 : MonoBehaviour
         if (DeltaColor.a >= 1)
         {
             if (Vector3.Distance(gameObject.transform.position, target) > 0)
-                transform.position -= (transform.position - target) * Time.deltaTime*2;
+            {
+
+                transform.position -= (transform.position - target) * Time.deltaTime * 2;
+            }
         }
 
 
