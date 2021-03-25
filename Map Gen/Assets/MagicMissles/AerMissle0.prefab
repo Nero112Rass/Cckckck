@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 4034929997872878196}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1427136952655945702}
   m_Father: {fileID: 0}
@@ -42,7 +42,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4034929997872878196}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 0}
 --- !u!23 &4034929997872878200
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -117,6 +117,16 @@ MonoBehaviour:
   MisslePrefabs0: []
   placeChasing: {x: 0, y: 0, z: 0}
   ClickPosition: {fileID: 0}
+  fireMana: 0
+  waterMana: 0
+  earthMana: 0
+  aerMana: 1
+  darkMana: 0
+  lightMana: 0
+  empowered: 0
+  cooldown: 0.5
+  burst: 0
+  materiaCost: 0
 --- !u!1001 &4034929997966448652
 PrefabInstance:
   m_ObjectHideFlags: 0

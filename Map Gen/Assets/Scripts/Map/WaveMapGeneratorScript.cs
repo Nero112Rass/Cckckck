@@ -12,14 +12,23 @@ public class WaveMapGeneratorScript : MonoBehaviour
 
     private VoxelTile[,] spawnedTiles;
 
-    public float VoxelSize = 0.1f;
-    public int TileSideVoxels = 8;
+    public float VoxelSize;
+    public int TileSideVoxels;
 
     private Queue<Vector2Int> recalcPossibleTilesQueue = new Queue<Vector2Int>();
 
     private List<VoxelTile>[,] possibleTiles;
 
-        private void Start()
+    public int offsetY;
+    public int offsetX;
+
+    public int chunkAmountX;
+    public int chunkAmountY;
+
+    public int chunkNumberX;
+    public int chunkNumberY;
+
+    private void Start()
         {
             spawnedTiles = new VoxelTile[MapSize.x, MapSize.y];
 
@@ -70,7 +79,14 @@ public class WaveMapGeneratorScript : MonoBehaviour
                 }
             }
 
-            Generate();
+
+            for (int x = 0; x < chunkAmountX+1; x++)
+                for (int y = 0; y < chunkAmountY+1; y++)
+                {
+                    chunkNumberX = x;
+                    chunkNumberY = y;
+                    Generate();
+                }
 
         }
 
@@ -184,7 +200,7 @@ public class WaveMapGeneratorScript : MonoBehaviour
 
             if(maxCountTile.Count == 1)
             {
-                Debug.Log(message: $"Failure, generated for {iterations} iterations, with {backtracks} backtracks.");
+                Debug.Log(message: $"Generated for {iterations} iterations, with {backtracks} backtracks.");
                 return true;
             }
 
@@ -242,7 +258,7 @@ public class WaveMapGeneratorScript : MonoBehaviour
         if (possibleTiles[x,y].Count == 0) return;
 
         VoxelTile selectedTile = GetRandomTile(possibleTiles[x,y]);
-        Vector3 position = new Vector3(x, y: 0, z: y) * selectedTile.VoxelSize * selectedTile.TileSideVoxels;
+        Vector3 position = new Vector3(x + (MapSize.x-2) * chunkNumberX, y: 0, z: y + (MapSize.y-2) * chunkNumberY) * selectedTile.VoxelSize * selectedTile.TileSideVoxels;
         spawnedTiles[x, y] = Instantiate(selectedTile, position, selectedTile.transform.rotation);
     }
 
