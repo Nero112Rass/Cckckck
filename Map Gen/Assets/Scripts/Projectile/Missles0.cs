@@ -20,7 +20,10 @@ public class Missles0 : MonoBehaviour
 
     public float stepMove = 1;
 
-    public ParticleSystem Aura;
+    public ParticleSystem AuraH;
+    public ParticleSystem AuraS;
+
+    public bool sphereAura;
 
     public Transform playerChasing;
 
@@ -116,7 +119,8 @@ public class Missles0 : MonoBehaviour
         }
 
 
-
+        if (!sphereAura)
+            AuraS = AuraH;
 
 
         target = GameObject.Find("Camera").GetComponent<ScreenPointToRay>().clickPosition0;
@@ -217,16 +221,20 @@ public class Missles0 : MonoBehaviour
             if (DeltaColor.a < 1)
                 DeltaColor.a += step * Time.deltaTime;
             m_ObjectRenderer.material.color = DeltaColor;
-            if (!Aura.isPlaying)
+            if (!AuraH.isPlaying)
             {
-                Aura.Play();
+                AuraH.Play();
+            }
+            if (!AuraS.isPlaying)
+            {
+                AuraS.Play();
             }
         }
 
 
         if (empowered)
         {
-            Aura.transform.localScale = Aura.transform.localScale * 3/2;
+            AuraH.transform.localScale = AuraH.transform.localScale * 3/2;
             //transform.localScale = transform.localScale * 2;//
             empowered = false;
         }
@@ -259,11 +267,15 @@ public class Missles0 : MonoBehaviour
                 m_ObjectRenderer.material.color = DeltaColor;
 
             }
-            if (Aura.isPlaying)
+            if (AuraH.isPlaying)
             {
-                Aura.Stop();
+                AuraH.Stop();
             }
-            
+            if (AuraS.isPlaying)
+            {
+                AuraS.Stop();
+            }
+
         }
 
         if (Vector3.Distance(gameObject.transform.position, target) <= 1)

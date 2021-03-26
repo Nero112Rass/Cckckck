@@ -77,6 +77,7 @@
     <Compile Include="Assets\Scripts\Projectile\MagicBurst1.cs" />
     <Compile Include="Assets\Scripts\Map\Darkening.cs" />
     <Compile Include="Assets\Scripts\Character\CharContoller.cs" />
+    <Compile Include="Assets\Scripts\Item.cs" />
     <Compile Include="Assets\Scripts\Camera\Bar.cs" />
     <Compile Include="Assets\AssetStoreOriginals\_SNAPS_Tools\AssetSwapTool\Scripts\UnpackNestedPrefab.cs" />
     <Compile Include="Assets\Scripts\Character\Shooting.cs" />
@@ -85,7 +86,7 @@
     <Compile Include="Assets\Scripts\Map\MapGeneratorScript.cs" />
     <Compile Include="Assets\Scripts\Map\Particles.cs" />
     <Compile Include="Assets\Scripts\Camera\CameraMovement.cs" />
-    <Compile Include="Assets\Scripts\Item.cs" />
+    <Compile Include="Assets\FlightParticlesChasing.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\FSP\MAST\updates.txt" />
